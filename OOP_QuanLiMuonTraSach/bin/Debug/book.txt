@@ -1,0 +1,121 @@
+﻿{
+  "Books": [
+    {
+      "IdSach": "1",
+      "TenSach": "Sach1",
+      "TacGia": "TacGia1",
+      "TheLoai": "Tiểu thuyết",
+      "SoLuong": "10",
+      "NhaXuatBan": "NXB Kim Đồng",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "2",
+      "TenSach": "Sach2",
+      "TacGia": "TacGia2",
+      "TheLoai": "Truyện trinh thám",
+      "SoLuong": "5",
+      "NhaXuatBan": "NXB Liên Doanh",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    },
+    {
+      "IdSach": "3",
+      "TenSach": "Sach3",
+      "TacGia": "TacGia3",
+      "TheLoai": "Truyện cười",
+      "SoLuong": "25",
+      "NhaXuatBan": "NXB Trẻ em",
+      "NamXuatBan": "20/03/2024"
+    }
+  ]
+}
