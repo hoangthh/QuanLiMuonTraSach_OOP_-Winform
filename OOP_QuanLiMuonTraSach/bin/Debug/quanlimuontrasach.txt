@@ -1,0 +1,88 @@
+﻿{
+  "QuanLiMuonTraSaches": [
+    {
+      "IdMuonTra": 1,
+      "IdNguoiDung": 1,
+      "HoTen": "A",
+      "IdSach": 3,
+      "TenSach": "Sach3",
+      "NgayMuon": "2024-04-11T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-25T00:00:00+07:00",
+      "NgayTraThucTe": "2024-04-12T00:00:00+07:00",
+      "SoTienPhat": 50000,
+      "TinhTrang": "Đang mượn"
+    },
+    {
+      "IdMuonTra": 2,
+      "IdNguoiDung": 3,
+      "HoTen": "C",
+      "IdSach": 2,
+      "TenSach": "Sach2",
+      "NgayMuon": "2024-04-11T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-25T00:00:00+07:00",
+      "NgayTraThucTe": "2024-04-12T00:00:00+07:00",
+      "SoTienPhat": 0,
+      "TinhTrang": "Đang mượn"
+    },
+    {
+      "IdMuonTra": 3,
+      "IdNguoiDung": 2,
+      "HoTen": "B",
+      "IdSach": 1,
+      "TenSach": "Sach1",
+      "NgayMuon": "2024-04-11T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-25T00:00:00+07:00",
+      "NgayTraThucTe": "2024-04-12T00:00:00+07:00",
+      "SoTienPhat": 0,
+      "TinhTrang": "Đang mượn"
+    },
+    {
+      "IdMuonTra": 4,
+      "IdNguoiDung": 1,
+      "HoTen": "A",
+      "IdSach": 1,
+      "TenSach": "Sach1",
+      "NgayMuon": "2024-04-11T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-25T00:00:00+07:00",
+      "NgayTraThucTe": "2024-04-12T00:00:00+07:00",
+      "SoTienPhat": 0,
+      "TinhTrang": "Đang mượn"
+    },
+    {
+      "IdMuonTra": 5,
+      "IdNguoiDung": 1,
+      "HoTen": "A",
+      "IdSach": 6,
+      "TenSach": "Sach6",
+      "NgayMuon": "2024-04-11T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-25T00:00:00+07:00",
+      "NgayTraThucTe": "2024-03-12T00:00:00",
+      "SoTienPhat": 0,
+      "TinhTrang": "Đã trả"
+    },
+    {
+      "IdMuonTra": 6,
+      "IdNguoiDung": 1,
+      "HoTen": "A",
+      "IdSach": 1,
+      "TenSach": "Sach1",
+      "NgayMuon": "2024-04-14T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-28T00:00:00+07:00",
+      "NgayTraThucTe": null,
+      "SoTienPhat": 0,
+      "TinhTrang": "Đang mượn"
+    },
+    {
+      "IdMuonTra": 7,
+      "IdNguoiDung": 1,
+      "HoTen": "A",
+      "IdSach": 6,
+      "TenSach": "Sach6",
+      "NgayMuon": "2024-04-15T00:00:00+07:00",
+      "NgayTraDuKien": "2024-04-29T00:00:00+07:00",
+      "NgayTraThucTe": null,
+      "SoTienPhat": 0,
+      "TinhTrang": "Đang mượn"
+    }
+  ]
+}

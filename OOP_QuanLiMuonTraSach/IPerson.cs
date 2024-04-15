@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.Person
+namespace OOP_QuanLiMuonTraSach.Person
 {
     public interface IPerson
     {

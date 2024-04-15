@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_QuanLiMuonTraSach;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,79 +8,58 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace ConsoleApp1
+namespace OOP_QuanLiMuonTraSach
 {
     public class BookList : ISerializable
     {
+        //Private fields
         private List<Book> books;
-        public List<Book> Books 
-        { 
-            get {  return books; } 
+
+        //Public fields
+        public List<Book> Books
+        {
+            get { return books; }
             set { books = value; }
         }
+
+        //Constructor
         public BookList()
         {
-            Books = new List<Book>();
+  
         }
+
+        //Method
+        //Method Serialize
         public BookList(SerializationInfo info, StreamingContext context)
         {
-            Books = (List<Book>)info.GetValue("Books",typeof(List<Book>));
+            Books = (List<Book>)info.GetValue("Books", typeof(List<Book>));
         }
+
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             info.AddValue("Books", Books);
         }
-        public void Add(Book book)
-        {
-            Books.Add(book);
-        }
-        public void Print()
-        {
-            foreach(Book books in Books)
-            {
-                Console.WriteLine(books);
-            }
 
-        }
-        public void Print(string ID)
+        public void GetInstance()
         {
-            foreach (Book books in Books)
-            {
-                if(books.IdSach == ID)
-                Console.WriteLine(books);
-            }
+            Books = new List<Book>();
+            Books = ThuVienController.Deserialize<BookList>(FilePath.Book).Books;
         }
-        public void Remove(Book book)
+
+        public void DecreaseSoLuong(Book book)
         {
-            Books.Remove(book);
+            book.SoLuong--;
         }
-        public List<Book> GetListBook()
+
+        public void IncreaseSoLuong(Book book)
         {
-            return Books;
+            book.SoLuong++;
         }
-        public void Serialize<T>(string path, T bookLists)
-        {
-            try
-            {
-                string json = JsonSerializer.Serialize(bookLists, new JsonSerializerOptions { WriteIndented = true,Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(System.Text.Unicode.UnicodeRanges.All) });
-                File.WriteAllText(path, json, Encoding.UTF8);
-            }
-            catch (Exception e) { throw new Exception(); }
-        }
-        public T Deserialize<T>(string path)
-        {
-            try
-            {
-                string jsonFromFile = File.ReadAllText(path);
-                T deserializedObject = JsonSerializer.Deserialize<T>(jsonFromFile);
-                return deserializedObject;
-            }
-            catch (Exception e) { throw new Exception(); }
-        }
-        public Book FindBook(BookList bookList, string id)
+
+        public Book FindBook(int id)
         {
             Book targetBook = null;
-            foreach (Book book in bookList.Books)
+            foreach (Book book in ThuVien.GetInstance().Employee.BookList.Books)
             {
                 if (book.IdSach == id)
                 {

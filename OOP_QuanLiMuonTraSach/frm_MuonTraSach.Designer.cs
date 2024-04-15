@@ -28,21 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MuonTraSach));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_Null2 = new System.Windows.Forms.Panel();
             this.label_ThongTinDocGia = new System.Windows.Forms.Label();
             this.label_SearchName = new System.Windows.Forms.Label();
             this.textBox_SearchName = new System.Windows.Forms.TextBox();
             this.panel_Search = new System.Windows.Forms.Panel();
-            this.button_TraSach = new System.Windows.Forms.Button();
             this.button_ReturnLastPage = new System.Windows.Forms.Button();
             this.button_ReturnFirstPage = new System.Windows.Forms.Button();
-            this.button_MuonSach = new System.Windows.Forms.Button();
             this.label_Previous = new System.Windows.Forms.Label();
             this.panel_Null3 = new System.Windows.Forms.Panel();
             this.button_Search = new System.Windows.Forms.Button();
@@ -55,6 +53,7 @@
             this.button_ChangePage1 = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_SearchFunction = new System.Windows.Forms.Panel();
+            this.button_TraSach = new System.Windows.Forms.Button();
             this.panel_Search.SuspendLayout();
             this.panel_Null3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ThongKeMuonTra)).BeginInit();
@@ -93,6 +92,7 @@
             this.label_SearchName.Size = new System.Drawing.Size(150, 21);
             this.label_SearchName.TabIndex = 10;
             this.label_SearchName.Text = "Search by id, name...";
+            this.label_SearchName.Click += new System.EventHandler(this.label_SearchName_Click);
             // 
             // textBox_SearchName
             // 
@@ -103,6 +103,8 @@
             this.textBox_SearchName.Name = "textBox_SearchName";
             this.textBox_SearchName.Size = new System.Drawing.Size(475, 22);
             this.textBox_SearchName.TabIndex = 7;
+            this.textBox_SearchName.Click += new System.EventHandler(this.textBox_SearchName_Click);
+            this.textBox_SearchName.TextChanged += new System.EventHandler(this.textBox_SearchName_TextChanged);
             // 
             // panel_Search
             // 
@@ -113,23 +115,6 @@
             this.panel_Search.Name = "panel_Search";
             this.panel_Search.Size = new System.Drawing.Size(480, 39);
             this.panel_Search.TabIndex = 9;
-            // 
-            // button_TraSach
-            // 
-            this.button_TraSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_TraSach.FlatAppearance.BorderSize = 0;
-            this.button_TraSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_TraSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_TraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_TraSach.Image = ((System.Drawing.Image)(resources.GetObject("button_TraSach.Image")));
-            this.button_TraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.Location = new System.Drawing.Point(203, 11);
-            this.button_TraSach.Name = "button_TraSach";
-            this.button_TraSach.Size = new System.Drawing.Size(173, 40);
-            this.button_TraSach.TabIndex = 20;
-            this.button_TraSach.Text = "      Trả sách";
-            this.button_TraSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.UseVisualStyleBackColor = true;
             // 
             // button_ReturnLastPage
             // 
@@ -147,6 +132,7 @@
             this.button_ReturnLastPage.TabIndex = 19;
             this.button_ReturnLastPage.Text = ">>";
             this.button_ReturnLastPage.UseVisualStyleBackColor = false;
+            this.button_ReturnLastPage.Click += new System.EventHandler(this.button_ReturnLastPage_Click);
             // 
             // button_ReturnFirstPage
             // 
@@ -164,24 +150,7 @@
             this.button_ReturnFirstPage.TabIndex = 18;
             this.button_ReturnFirstPage.Text = "<<";
             this.button_ReturnFirstPage.UseVisualStyleBackColor = false;
-            // 
-            // button_MuonSach
-            // 
-            this.button_MuonSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_MuonSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_MuonSach.FlatAppearance.BorderSize = 0;
-            this.button_MuonSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_MuonSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_MuonSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_MuonSach.Image = ((System.Drawing.Image)(resources.GetObject("button_MuonSach.Image")));
-            this.button_MuonSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_MuonSach.Location = new System.Drawing.Point(0, 11);
-            this.button_MuonSach.Name = "button_MuonSach";
-            this.button_MuonSach.Size = new System.Drawing.Size(173, 40);
-            this.button_MuonSach.TabIndex = 11;
-            this.button_MuonSach.Text = "      Mượn sách";
-            this.button_MuonSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_MuonSach.UseVisualStyleBackColor = true;
+            this.button_ReturnFirstPage.Click += new System.EventHandler(this.button_ReturnFirstPage_Click);
             // 
             // label_Previous
             // 
@@ -238,6 +207,7 @@
             this.button_ChangePage3.TabIndex = 17;
             this.button_ChangePage3.Text = "3";
             this.button_ChangePage3.UseVisualStyleBackColor = false;
+            this.button_ChangePage3.Click += new System.EventHandler(this.button_ChangePage3_Click);
             // 
             // label_Next
             // 
@@ -267,6 +237,7 @@
             this.button_ChangePage2.TabIndex = 14;
             this.button_ChangePage2.Text = "2";
             this.button_ChangePage2.UseVisualStyleBackColor = false;
+            this.button_ChangePage2.Click += new System.EventHandler(this.button_ChangePage2_Click);
             // 
             // panel_Null1
             // 
@@ -282,29 +253,29 @@
             this.dataGridView_ThongKeMuonTra.AllowUserToDeleteRows = false;
             this.dataGridView_ThongKeMuonTra.AllowUserToResizeColumns = false;
             this.dataGridView_ThongKeMuonTra.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.dataGridView_ThongKeMuonTra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView_ThongKeMuonTra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_ThongKeMuonTra.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_ThongKeMuonTra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_ThongKeMuonTra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(111)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_ThongKeMuonTra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_ThongKeMuonTra.ColumnHeadersHeight = 40;
             this.dataGridView_ThongKeMuonTra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_ThongKeMuonTra.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_ThongKeMuonTra.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_ThongKeMuonTra.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_ThongKeMuonTra.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_ThongKeMuonTra.EnableHeadersVisualStyles = false;
             this.dataGridView_ThongKeMuonTra.GridColor = System.Drawing.Color.White;
@@ -313,21 +284,21 @@
             this.dataGridView_ThongKeMuonTra.MultiSelect = false;
             this.dataGridView_ThongKeMuonTra.Name = "dataGridView_ThongKeMuonTra";
             this.dataGridView_ThongKeMuonTra.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_ThongKeMuonTra.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_ThongKeMuonTra.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_ThongKeMuonTra.RowHeadersVisible = false;
             this.dataGridView_ThongKeMuonTra.RowHeadersWidth = 100;
             this.dataGridView_ThongKeMuonTra.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.dataGridView_ThongKeMuonTra.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.dataGridView_ThongKeMuonTra.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_ThongKeMuonTra.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridView_ThongKeMuonTra.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataGridView_ThongKeMuonTra.RowTemplate.Height = 24;
@@ -340,7 +311,6 @@
             this.panel_Null4.Controls.Add(this.button_TraSach);
             this.panel_Null4.Controls.Add(this.button_ReturnLastPage);
             this.panel_Null4.Controls.Add(this.button_ReturnFirstPage);
-            this.panel_Null4.Controls.Add(this.button_MuonSach);
             this.panel_Null4.Controls.Add(this.label_Previous);
             this.panel_Null4.Controls.Add(this.button_ChangePage3);
             this.panel_Null4.Controls.Add(this.button_ChangePage1);
@@ -368,6 +338,7 @@
             this.button_ChangePage1.TabIndex = 13;
             this.button_ChangePage1.Text = "1";
             this.button_ChangePage1.UseVisualStyleBackColor = false;
+            this.button_ChangePage1.Click += new System.EventHandler(this.button_ChangePage1_Click);
             // 
             // panel_Main
             // 
@@ -392,6 +363,24 @@
             this.panel_SearchFunction.Size = new System.Drawing.Size(1155, 676);
             this.panel_SearchFunction.TabIndex = 2;
             // 
+            // button_TraSach
+            // 
+            this.button_TraSach.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_TraSach.FlatAppearance.BorderSize = 0;
+            this.button_TraSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_TraSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_TraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_TraSach.Image = ((System.Drawing.Image)(resources.GetObject("button_TraSach.Image")));
+            this.button_TraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_TraSach.Location = new System.Drawing.Point(0, 11);
+            this.button_TraSach.Name = "button_TraSach";
+            this.button_TraSach.Size = new System.Drawing.Size(173, 40);
+            this.button_TraSach.TabIndex = 20;
+            this.button_TraSach.Text = "      Trả sách";
+            this.button_TraSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_TraSach.UseVisualStyleBackColor = true;
+            this.button_TraSach.Click += new System.EventHandler(this.button_TraSach_Click);
+            // 
             // frm_MuonTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,6 +390,7 @@
             this.Controls.Add(this.panel_SearchFunction);
             this.Name = "frm_MuonTraSach";
             this.Text = "frm_MuonTraSach";
+            this.Resize += new System.EventHandler(this.FormQuanLiMuonTra_Resize);
             this.panel_Search.ResumeLayout(false);
             this.panel_Search.PerformLayout();
             this.panel_Null3.ResumeLayout(false);
@@ -424,7 +414,6 @@
         private System.Windows.Forms.Button button_TraSach;
         private System.Windows.Forms.Button button_ReturnLastPage;
         private System.Windows.Forms.Button button_ReturnFirstPage;
-        private System.Windows.Forms.Button button_MuonSach;
         private System.Windows.Forms.Label label_Previous;
         private System.Windows.Forms.Panel panel_Null3;
         private System.Windows.Forms.Button button_Search;

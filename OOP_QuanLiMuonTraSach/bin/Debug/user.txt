@@ -1,0 +1,40 @@
+﻿{
+  "Students": [
+    {
+      "IdStudent": 1,
+      "HoTen": "A",
+      "GioiTinh": "Nam",
+      "NgaySinh": "2024-04-13T00:00:00+07:00",
+      "Email": "A@gmail.com",
+      "SoDienThoai": "0123123",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 2,
+      "HoTen": "B",
+      "GioiTinh": "Nam",
+      "NgaySinh": "2024-04-13T00:00:00+07:00",
+      "Email": "B@gmail.com",
+      "SoDienThoai": "0123123",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 3,
+      "HoTen": "C",
+      "GioiTinh": "Nam",
+      "NgaySinh": "2024-04-13T00:00:00+07:00",
+      "Email": "C@gmail.com",
+      "SoDienThoai": "0123123",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 4,
+      "HoTen": "D",
+      "GioiTinh": "Nam",
+      "NgaySinh": "2024-04-13T00:00:00+07:00",
+      "Email": "D@gmail.com",
+      "SoDienThoai": "0123123",
+      "LichSuMuon": "Lịch sử mượn"
+    }
+  ]
+}

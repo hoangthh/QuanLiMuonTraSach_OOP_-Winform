@@ -60,22 +60,6 @@ namespace OOP_QuanLiMuonTraSach
         {
             timer.Stop();
         }
-
-        //Hàm mở ChildForm vào 1 panel cố định trong giao diện
-        public void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panel_ChildForm.Controls.Add(childForm);
-            childForm.BringToFront();
-            childForm.Show();
-        }
         #endregion
 
         //Events
@@ -99,16 +83,23 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_ThongTinSach_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_ThongTinSach());
+            FormController.openChildForm(new frm_ThongTinSach(), panel_ChildForm);
             label_CurrentPage.Text = "Quản lí sách";
             label_CurrentFunction.Text = "> Quản lí sách > Thông tin sách";
         }
 
         private void button_MuonTraSach_Click(object sender, EventArgs e)
         {
-            //openChildForm(new ff_MuonTraSach());
+            FormController.openChildForm(new frm_MuonTraSach(), panel_ChildForm);
             label_CurrentPage.Text = "Quản lí sách";
             label_CurrentFunction.Text = "> Quản lí sách > Mượn trả sách";
+        }
+
+        private void button_QuanLiDocGia_Click(object sender, EventArgs e)
+        {
+            FormController.openChildForm(new frm_ThongTinDocGia(), panel_ChildForm);
+            label_CurrentPage.Text = "Quản lí độc giả";
+            label_CurrentFunction.Text = "> Quản lí độc giả";
         }
         #endregion
     }

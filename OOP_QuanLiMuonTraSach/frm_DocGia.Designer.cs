@@ -32,12 +32,11 @@
             this.textBox_SearchFunction = new System.Windows.Forms.TextBox();
             this.button_Booking = new System.Windows.Forms.Button();
             this.panel_SearchingButton = new System.Windows.Forms.Panel();
+            this.button_History = new System.Windows.Forms.Button();
             this.button_Searching = new System.Windows.Forms.Button();
             this.panel_ProfileButton = new System.Windows.Forms.Panel();
-            this.button_Profile = new System.Windows.Forms.Button();
             this.panel_BookingButton = new System.Windows.Forms.Panel();
             this.panel_HomeButton = new System.Windows.Forms.Panel();
-            this.button_Home = new System.Windows.Forms.Button();
             this.pictureBox_LogoUeh = new System.Windows.Forms.PictureBox();
             this.pictureBox_MenuIcon = new System.Windows.Forms.PictureBox();
             this.panel_SearchContainer = new System.Windows.Forms.Panel();
@@ -46,27 +45,20 @@
             this.pictureBox_SearchIcon = new System.Windows.Forms.PictureBox();
             this.panel_LogoUeh = new System.Windows.Forms.Panel();
             this.panel_ChildForm = new System.Windows.Forms.Panel();
-            this.button_History = new System.Windows.Forms.Button();
             this.panel_Sidebar = new System.Windows.Forms.Panel();
             this.panel_LogoutButton = new System.Windows.Forms.Panel();
-            this.button_Logout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button_ChangePassword = new System.Windows.Forms.Button();
             this.panel_SettingButton = new System.Windows.Forms.Panel();
             this.panel_Null4 = new System.Windows.Forms.Panel();
             this.button_Null2 = new System.Windows.Forms.Button();
             this.panel_Null3 = new System.Windows.Forms.Panel();
             this.button_Null1 = new System.Windows.Forms.Button();
             this.panel_Null2 = new System.Windows.Forms.Panel();
-            this.button_Reward = new System.Windows.Forms.Button();
             this.panel_Null1 = new System.Windows.Forms.Panel();
-            this.button_Games = new System.Windows.Forms.Button();
             this.panel_RatingButton = new System.Windows.Forms.Panel();
-            this.button_Noti = new System.Windows.Forms.Button();
             this.panel_HistoryButton = new System.Windows.Forms.Panel();
             this.panel_SearchingButton.SuspendLayout();
             this.panel_ProfileButton.SuspendLayout();
-            this.panel_BookingButton.SuspendLayout();
             this.panel_HomeButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LogoUeh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_MenuIcon)).BeginInit();
@@ -75,14 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SearchIcon)).BeginInit();
             this.panel_LogoUeh.SuspendLayout();
             this.panel_Sidebar.SuspendLayout();
-            this.panel_LogoutButton.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel_Null4.SuspendLayout();
             this.panel_Null3.SuspendLayout();
-            this.panel_Null2.SuspendLayout();
-            this.panel_Null1.SuspendLayout();
-            this.panel_RatingButton.SuspendLayout();
-            this.panel_HistoryButton.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_SearchFunction
@@ -104,7 +90,7 @@
             this.button_Booking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.button_Booking.Image = ((System.Drawing.Image)(resources.GetObject("button_Booking.Image")));
             this.button_Booking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Booking.Location = new System.Drawing.Point(23, 2);
+            this.button_Booking.Location = new System.Drawing.Point(24, 3);
             this.button_Booking.Margin = new System.Windows.Forms.Padding(2);
             this.button_Booking.Name = "button_Booking";
             this.button_Booking.Size = new System.Drawing.Size(166, 39);
@@ -115,13 +101,32 @@
             // 
             // panel_SearchingButton
             // 
-            this.panel_SearchingButton.Controls.Add(this.button_Searching);
+            this.panel_SearchingButton.Controls.Add(this.button_History);
             this.panel_SearchingButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_SearchingButton.Location = new System.Drawing.Point(0, 181);
             this.panel_SearchingButton.Margin = new System.Windows.Forms.Padding(2);
             this.panel_SearchingButton.Name = "panel_SearchingButton";
             this.panel_SearchingButton.Size = new System.Drawing.Size(217, 46);
             this.panel_SearchingButton.TabIndex = 16;
+            // 
+            // button_History
+            // 
+            this.button_History.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_History.FlatAppearance.BorderSize = 0;
+            this.button_History.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_History.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_History.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
+            this.button_History.Image = ((System.Drawing.Image)(resources.GetObject("button_History.Image")));
+            this.button_History.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_History.Location = new System.Drawing.Point(24, 2);
+            this.button_History.Margin = new System.Windows.Forms.Padding(2);
+            this.button_History.Name = "button_History";
+            this.button_History.Size = new System.Drawing.Size(166, 39);
+            this.button_History.TabIndex = 14;
+            this.button_History.Text = "         History";
+            this.button_History.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_History.UseVisualStyleBackColor = true;
+            this.button_History.Click += new System.EventHandler(this.button_History_Click);
             // 
             // button_Searching
             // 
@@ -132,7 +137,7 @@
             this.button_Searching.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.button_Searching.Image = ((System.Drawing.Image)(resources.GetObject("button_Searching.Image")));
             this.button_Searching.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Searching.Location = new System.Drawing.Point(23, 2);
+            this.button_Searching.Location = new System.Drawing.Point(24, 4);
             this.button_Searching.Margin = new System.Windows.Forms.Padding(2);
             this.button_Searching.Name = "button_Searching";
             this.button_Searching.Size = new System.Drawing.Size(166, 39);
@@ -140,10 +145,11 @@
             this.button_Searching.Text = "         Searching";
             this.button_Searching.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Searching.UseVisualStyleBackColor = true;
+            this.button_Searching.Click += new System.EventHandler(this.button_Searching_Click);
             // 
             // panel_ProfileButton
             // 
-            this.panel_ProfileButton.Controls.Add(this.button_Profile);
+            this.panel_ProfileButton.Controls.Add(this.button_Booking);
             this.panel_ProfileButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ProfileButton.Location = new System.Drawing.Point(0, 135);
             this.panel_ProfileButton.Margin = new System.Windows.Forms.Padding(2);
@@ -151,27 +157,8 @@
             this.panel_ProfileButton.Size = new System.Drawing.Size(217, 46);
             this.panel_ProfileButton.TabIndex = 16;
             // 
-            // button_Profile
-            // 
-            this.button_Profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Profile.FlatAppearance.BorderSize = 0;
-            this.button_Profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Profile.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Profile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Profile.Image = ((System.Drawing.Image)(resources.GetObject("button_Profile.Image")));
-            this.button_Profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Profile.Location = new System.Drawing.Point(24, 2);
-            this.button_Profile.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Profile.Name = "button_Profile";
-            this.button_Profile.Size = new System.Drawing.Size(166, 39);
-            this.button_Profile.TabIndex = 14;
-            this.button_Profile.Text = "         Profile";
-            this.button_Profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Profile.UseVisualStyleBackColor = true;
-            // 
             // panel_BookingButton
             // 
-            this.panel_BookingButton.Controls.Add(this.button_Booking);
             this.panel_BookingButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_BookingButton.Location = new System.Drawing.Point(0, 227);
             this.panel_BookingButton.Margin = new System.Windows.Forms.Padding(2);
@@ -181,31 +168,13 @@
             // 
             // panel_HomeButton
             // 
-            this.panel_HomeButton.Controls.Add(this.button_Home);
+            this.panel_HomeButton.Controls.Add(this.button_Searching);
             this.panel_HomeButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_HomeButton.Location = new System.Drawing.Point(0, 89);
             this.panel_HomeButton.Margin = new System.Windows.Forms.Padding(2);
             this.panel_HomeButton.Name = "panel_HomeButton";
             this.panel_HomeButton.Size = new System.Drawing.Size(217, 46);
             this.panel_HomeButton.TabIndex = 15;
-            // 
-            // button_Home
-            // 
-            this.button_Home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Home.FlatAppearance.BorderSize = 0;
-            this.button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Home.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Home.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Home.Image = ((System.Drawing.Image)(resources.GetObject("button_Home.Image")));
-            this.button_Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Home.Location = new System.Drawing.Point(23, 2);
-            this.button_Home.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Home.Name = "button_Home";
-            this.button_Home.Size = new System.Drawing.Size(166, 39);
-            this.button_Home.TabIndex = 14;
-            this.button_Home.Text = "         Home";
-            this.button_Home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Home.UseVisualStyleBackColor = true;
             // 
             // pictureBox_LogoUeh
             // 
@@ -289,28 +258,10 @@
             // panel_ChildForm
             // 
             this.panel_ChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_ChildForm.Location = new System.Drawing.Point(217, 0);
+            this.panel_ChildForm.Location = new System.Drawing.Point(217, 109);
             this.panel_ChildForm.Name = "panel_ChildForm";
-            this.panel_ChildForm.Size = new System.Drawing.Size(938, 687);
+            this.panel_ChildForm.Size = new System.Drawing.Size(938, 578);
             this.panel_ChildForm.TabIndex = 18;
-            // 
-            // button_History
-            // 
-            this.button_History.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_History.FlatAppearance.BorderSize = 0;
-            this.button_History.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_History.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_History.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_History.Image = ((System.Drawing.Image)(resources.GetObject("button_History.Image")));
-            this.button_History.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_History.Location = new System.Drawing.Point(23, 2);
-            this.button_History.Margin = new System.Windows.Forms.Padding(2);
-            this.button_History.Name = "button_History";
-            this.button_History.Size = new System.Drawing.Size(166, 39);
-            this.button_History.TabIndex = 14;
-            this.button_History.Text = "         History";
-            this.button_History.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_History.UseVisualStyleBackColor = true;
             // 
             // panel_Sidebar
             // 
@@ -337,7 +288,6 @@
             // 
             // panel_LogoutButton
             // 
-            this.panel_LogoutButton.Controls.Add(this.button_Logout);
             this.panel_LogoutButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_LogoutButton.Location = new System.Drawing.Point(0, 641);
             this.panel_LogoutButton.Margin = new System.Windows.Forms.Padding(2);
@@ -345,51 +295,14 @@
             this.panel_LogoutButton.Size = new System.Drawing.Size(217, 46);
             this.panel_LogoutButton.TabIndex = 20;
             // 
-            // button_Logout
-            // 
-            this.button_Logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Logout.FlatAppearance.BorderSize = 0;
-            this.button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Logout.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Logout.Image = ((System.Drawing.Image)(resources.GetObject("button_Logout.Image")));
-            this.button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Logout.Location = new System.Drawing.Point(23, 2);
-            this.button_Logout.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Logout.Name = "button_Logout";
-            this.button_Logout.Size = new System.Drawing.Size(167, 39);
-            this.button_Logout.TabIndex = 14;
-            this.button_Logout.Text = "         Log Out";
-            this.button_Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Logout.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button_ChangePassword);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 595);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 46);
             this.panel1.TabIndex = 21;
-            // 
-            // button_ChangePassword
-            // 
-            this.button_ChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ChangePassword.FlatAppearance.BorderSize = 0;
-            this.button_ChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ChangePassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_ChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("button_ChangePassword.Image")));
-            this.button_ChangePassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChangePassword.Location = new System.Drawing.Point(16, 2);
-            this.button_ChangePassword.Margin = new System.Windows.Forms.Padding(2);
-            this.button_ChangePassword.Name = "button_ChangePassword";
-            this.button_ChangePassword.Size = new System.Drawing.Size(181, 39);
-            this.button_ChangePassword.TabIndex = 14;
-            this.button_ChangePassword.Text = "      Change Password";
-            this.button_ChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ChangePassword.UseVisualStyleBackColor = true;
             // 
             // panel_SettingButton
             // 
@@ -456,7 +369,6 @@
             // 
             // panel_Null2
             // 
-            this.panel_Null2.Controls.Add(this.button_Reward);
             this.panel_Null2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null2.Location = new System.Drawing.Point(0, 411);
             this.panel_Null2.Margin = new System.Windows.Forms.Padding(2);
@@ -464,27 +376,8 @@
             this.panel_Null2.Size = new System.Drawing.Size(217, 46);
             this.panel_Null2.TabIndex = 17;
             // 
-            // button_Reward
-            // 
-            this.button_Reward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Reward.FlatAppearance.BorderSize = 0;
-            this.button_Reward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Reward.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Reward.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Reward.Image = ((System.Drawing.Image)(resources.GetObject("button_Reward.Image")));
-            this.button_Reward.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Reward.Location = new System.Drawing.Point(23, 3);
-            this.button_Reward.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Reward.Name = "button_Reward";
-            this.button_Reward.Size = new System.Drawing.Size(167, 39);
-            this.button_Reward.TabIndex = 16;
-            this.button_Reward.Text = "         Reward";
-            this.button_Reward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Reward.UseVisualStyleBackColor = true;
-            // 
             // panel_Null1
             // 
-            this.panel_Null1.Controls.Add(this.button_Games);
             this.panel_Null1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Null1.Location = new System.Drawing.Point(0, 365);
             this.panel_Null1.Margin = new System.Windows.Forms.Padding(2);
@@ -492,27 +385,8 @@
             this.panel_Null1.Size = new System.Drawing.Size(217, 46);
             this.panel_Null1.TabIndex = 16;
             // 
-            // button_Games
-            // 
-            this.button_Games.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Games.FlatAppearance.BorderSize = 0;
-            this.button_Games.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Games.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Games.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Games.Image = ((System.Drawing.Image)(resources.GetObject("button_Games.Image")));
-            this.button_Games.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Games.Location = new System.Drawing.Point(23, 4);
-            this.button_Games.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Games.Name = "button_Games";
-            this.button_Games.Size = new System.Drawing.Size(167, 39);
-            this.button_Games.TabIndex = 15;
-            this.button_Games.Text = "         Games";
-            this.button_Games.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Games.UseVisualStyleBackColor = true;
-            // 
             // panel_RatingButton
             // 
-            this.panel_RatingButton.Controls.Add(this.button_Noti);
             this.panel_RatingButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_RatingButton.Location = new System.Drawing.Point(0, 319);
             this.panel_RatingButton.Margin = new System.Windows.Forms.Padding(2);
@@ -520,27 +394,8 @@
             this.panel_RatingButton.Size = new System.Drawing.Size(217, 46);
             this.panel_RatingButton.TabIndex = 16;
             // 
-            // button_Noti
-            // 
-            this.button_Noti.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Noti.FlatAppearance.BorderSize = 0;
-            this.button_Noti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Noti.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Noti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Noti.Image = ((System.Drawing.Image)(resources.GetObject("button_Noti.Image")));
-            this.button_Noti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Noti.Location = new System.Drawing.Point(23, 2);
-            this.button_Noti.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Noti.Name = "button_Noti";
-            this.button_Noti.Size = new System.Drawing.Size(167, 39);
-            this.button_Noti.TabIndex = 14;
-            this.button_Noti.Text = "         Notification";
-            this.button_Noti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Noti.UseVisualStyleBackColor = true;
-            // 
             // panel_HistoryButton
             // 
-            this.panel_HistoryButton.Controls.Add(this.button_History);
             this.panel_HistoryButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_HistoryButton.Location = new System.Drawing.Point(0, 273);
             this.panel_HistoryButton.Margin = new System.Windows.Forms.Padding(2);
@@ -554,8 +409,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1155, 687);
-            this.Controls.Add(this.panel_SearchContainer);
             this.Controls.Add(this.panel_ChildForm);
+            this.Controls.Add(this.panel_SearchContainer);
             this.Controls.Add(this.panel_Sidebar);
             this.Name = "frm_DocGia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -563,7 +418,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel_SearchingButton.ResumeLayout(false);
             this.panel_ProfileButton.ResumeLayout(false);
-            this.panel_BookingButton.ResumeLayout(false);
             this.panel_HomeButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LogoUeh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_MenuIcon)).EndInit();
@@ -573,14 +427,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_SearchIcon)).EndInit();
             this.panel_LogoUeh.ResumeLayout(false);
             this.panel_Sidebar.ResumeLayout(false);
-            this.panel_LogoutButton.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel_Null4.ResumeLayout(false);
             this.panel_Null3.ResumeLayout(false);
-            this.panel_Null2.ResumeLayout(false);
-            this.panel_Null1.ResumeLayout(false);
-            this.panel_RatingButton.ResumeLayout(false);
-            this.panel_HistoryButton.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -592,10 +440,8 @@
         private System.Windows.Forms.Panel panel_SearchingButton;
         private System.Windows.Forms.Button button_Searching;
         private System.Windows.Forms.Panel panel_ProfileButton;
-        private System.Windows.Forms.Button button_Profile;
         private System.Windows.Forms.Panel panel_BookingButton;
         private System.Windows.Forms.Panel panel_HomeButton;
-        private System.Windows.Forms.Button button_Home;
         private System.Windows.Forms.PictureBox pictureBox_LogoUeh;
         private System.Windows.Forms.PictureBox pictureBox_MenuIcon;
         private System.Windows.Forms.Panel panel_SearchContainer;
@@ -607,20 +453,15 @@
         private System.Windows.Forms.Button button_History;
         private System.Windows.Forms.Panel panel_Sidebar;
         private System.Windows.Forms.Panel panel_LogoutButton;
-        private System.Windows.Forms.Button button_Logout;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button_ChangePassword;
         private System.Windows.Forms.Panel panel_SettingButton;
         private System.Windows.Forms.Panel panel_Null4;
         private System.Windows.Forms.Button button_Null2;
         private System.Windows.Forms.Panel panel_Null3;
         private System.Windows.Forms.Button button_Null1;
         private System.Windows.Forms.Panel panel_Null2;
-        private System.Windows.Forms.Button button_Reward;
         private System.Windows.Forms.Panel panel_Null1;
-        private System.Windows.Forms.Button button_Games;
         private System.Windows.Forms.Panel panel_RatingButton;
-        private System.Windows.Forms.Button button_Noti;
         private System.Windows.Forms.Panel panel_HistoryButton;
     }
 }

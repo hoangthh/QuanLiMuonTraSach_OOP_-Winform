@@ -1,31 +1,56 @@
-﻿using ConsoleApp1.Person;
+﻿using OOP_QuanLiMuonTraSach.Person;
+using OOP_QuanLiMuonTraSach;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace OOP_QuanLiMuonTraSach
 {
-    public class StudentList
+    internal class StudentList : ISerializable
     {
-        List<Student> students;
+        //Private fields
+        private List<Student> students;
+
+        //Public fields
+        public List<Student> Students
+        {
+            get { return students; }
+            set { students = value; }
+        }
+       
+        //Constructor
         public StudentList()
         {
-            students = new List<Student>();
+           
         }
-        public void Add(Student student)
+
+        public void GetInstance()
         {
-            students.Add(student);
+            Students = new List<Student>();
+            Students = ThuVienController.Deserialize<StudentList>(FilePath.User)?.Students ?? new List<Student>();
         }
-        public Student GetStudent(string ID)
+
+        //Method
+        //Method Serialize
+        public StudentList(SerializationInfo info, StreamingContext context)
         {
-            foreach(Student student in students)
+            Students = (List<Student>)info.GetValue("Students", typeof(List<Student>));
+        }
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("Students", Students);
+        }
+
+        public Student FindStudent(int ID)
+        {
+            foreach(Student student in Students)
             {
-                if(student.ID == ID) return student;
+                if(student.IdStudent == ID) return student;
             }
             return null;
         }
-        public List<Student> GetStudents() {  return students; }
     }
 }

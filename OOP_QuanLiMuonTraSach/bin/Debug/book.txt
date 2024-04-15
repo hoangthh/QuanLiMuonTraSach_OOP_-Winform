@@ -1,121 +1,94 @@
 ﻿{
   "Books": [
     {
-      "IdSach": "1",
+      "IdSach": 1,
       "TenSach": "Sach1",
       "TacGia": "TacGia1",
       "TheLoai": "Tiểu thuyết",
-      "SoLuong": "10",
+      "SoLuong": 8,
       "NhaXuatBan": "NXB Kim Đồng",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "2",
+      "IdSach": 2,
       "TenSach": "Sach2",
       "TacGia": "TacGia2",
       "TheLoai": "Truyện trinh thám",
-      "SoLuong": "5",
+      "SoLuong": 5,
       "NhaXuatBan": "NXB Liên Doanh",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "3",
+      "IdSach": 3,
       "TenSach": "Sach3",
       "TacGia": "TacGia3",
       "TheLoai": "Truyện cười",
-      "SoLuong": "25",
+      "SoLuong": 22,
       "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
+      "IdSach": 4,
+      "TenSach": "Sach4",
       "TacGia": "TacGia3",
       "TheLoai": "Truyện cười",
-      "SoLuong": "25",
+      "SoLuong": 11,
       "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
+      "IdSach": 5,
+      "TenSach": "Sach5",
+      "TacGia": "TacGia5",
       "TheLoai": "Truyện cười",
-      "SoLuong": "25",
+      "SoLuong": 33,
       "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
+      "IdSach": 6,
+      "TenSach": "Sach6",
       "TacGia": "TacGia3",
       "TheLoai": "Truyện cười",
-      "SoLuong": "25",
+      "SoLuong": 20,
       "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "IdSach": 7,
+      "TenSach": "Sach7",
+      "TacGia": "aaa",
+      "TheLoai": "aaa",
+      "SoLuong": 12,
+      "NhaXuatBan": "kkk",
+      "NamXuatBan": "2024-04-14T00:00:00+07:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "IdSach": 8,
+      "TenSach": "Sach8",
+      "TacGia": "aaa",
+      "TheLoai": "aaa",
+      "SoLuong": 12,
+      "NhaXuatBan": "aa",
+      "NamXuatBan": "2024-04-14T00:00:00+07:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "IdSach": 9,
+      "TenSach": "test",
+      "TacGia": "test",
+      "TheLoai": "truyen",
+      "SoLuong": 13,
+      "NhaXuatBan": "nxb test",
+      "NamXuatBan": "2024-04-15T00:00:00+07:00"
     },
     {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
-    },
-    {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
-    },
-    {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
-    },
-    {
-      "IdSach": "3",
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": "25",
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "20/03/2024"
+      "IdSach": 10,
+      "TenSach": "test1",
+      "TacGia": "test2",
+      "TheLoai": "phim heo",
+      "SoLuong": 13,
+      "NhaXuatBan": "nxb rdg",
+      "NamXuatBan": "2024-04-15T00:00:00+07:00"
     }
   ]
 }
