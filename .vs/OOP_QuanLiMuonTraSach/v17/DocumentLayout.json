@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|c:\\users\\pc\\documents\\c# university\\oop_programming\\oop_quanlimuontrasach\\oop_quanlimuontrasach\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\thuviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\thuviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_thongtinsachchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_thongtinsachchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_themsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_themsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\filepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\filepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\thuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\thuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_searching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_searching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,30 +47,6 @@
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_searching.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\thuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\thuvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\thuviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\thuviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\booklist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\filepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\filepath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\iperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|c:\\users\\pc\\documents\\c# university\\oop_programming\\oop_quanlimuontrasach\\oop_quanlimuontrasach\\listquanlimuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\listquanlimuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\listquanlimuontrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -123,10 +131,6 @@
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_themsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_themsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_thongtindocgiachitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_thongtindocgiachitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -171,10 +175,6 @@
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_thongtindocgiachitiet.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_thongtinsachchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_thongtinsachchitiet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\oop_quanlimuontrasach\\frm_xacnhantrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4910FBF0-BDB9-4CD6-ADC6-57E3B5813C1D}|OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach.csproj|solutionrelative:oop_quanlimuontrasach\\frm_xacnhantrasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -186,11 +186,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Program.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Program.cs",
@@ -199,8 +199,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T12:39:04.162Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -212,46 +211,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "BookList.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\BookList.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\BookList.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\BookList.cs",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\BookList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T12:07:35.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ThuVienController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\ThuVienController.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\ThuVienController.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\ThuVienController.cs",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\ThuVienController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAJAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T03:35:10.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ThuVien.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\ThuVien.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\ThuVien.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\ThuVien.cs",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\ThuVien.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAmwAoAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:06:46.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T12:06:46.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Employee.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Employee.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Employee.cs",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\Employee.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T12:39:14.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FilePath.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\FilePath.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\FilePath.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\FilePath.cs",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\FilePath.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:17:49.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_ThongTinSachChiTiet.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs [Design]",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T04:19:44.371Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frm_ThemSach.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEgAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T15:42:12.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Books.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Books.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Books.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Books.cs",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\Books.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAE4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T12:08:30.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "frm_Searching.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_Searching.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_Searching.cs",
-              "ViewState": "AQIAACoDAAAAAAAAAAAAADoDAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoDAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:45:40.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T04:45:40.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "frm_Searching.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs",
+              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_Searching.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs [Design]",
+              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_Searching.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T04:44:39.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "frm_ThongTinSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs",
@@ -259,76 +340,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs",
               "ViewState": "AQIAABcCAAAAAAAAAAAAAC8CAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:15:59.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T16:15:59.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_Searching.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_Searching.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_Searching.cs [Design]",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_Searching.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:44:39.086Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookList.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\BookList.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\BookList.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\BookList.cs",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\BookList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:07:35.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Books.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Books.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Books.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Books.cs",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\Books.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:08:30.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Employee.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Employee.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Employee.cs",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\Employee.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAACAAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:39:14.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FilePath.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\FilePath.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\FilePath.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\FilePath.cs",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\FilePath.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:17:49.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FormController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\FormController.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\FormController.cs",
@@ -336,12 +352,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\FormController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:17:54.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T14:17:54.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "IPerson.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\IPerson.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\IPerson.cs",
@@ -349,12 +364,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\IPerson.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T06:12:04.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T06:12:04.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ListQuanLiMuonTraSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\ListQuanLiMuonTraSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\ListQuanLiMuonTraSach.cs",
@@ -362,12 +376,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\ListQuanLiMuonTraSach.cs",
               "ViewState": "AQIAADwAAAAAAAAAAAAQwFQAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T05:51:52.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T05:51:52.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "QuanLiMuonTraSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\QuanLiMuonTraSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\QuanLiMuonTraSach.cs",
@@ -375,12 +388,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\QuanLiMuonTraSach.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAAAGUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:06:15.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T04:06:15.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\Student.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\Student.cs",
@@ -388,12 +400,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\Student.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAAoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T13:20:00.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T13:20:00.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "StudentList.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\StudentList.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\StudentList.cs",
@@ -401,12 +412,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\StudentList.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAC4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T03:29:21.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T03:29:21.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "frm_ThongTinDocGia.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs",
@@ -414,36 +424,33 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAANoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T14:22:03.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T14:22:03.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "frm_ThongTinSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:31:20.338Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T12:31:20.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "frm_ThongTinDocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T14:17:26.316Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-13T14:17:26.316Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "frm_ChinhSuaDocGia.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs",
@@ -451,24 +458,22 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAswE8AAACVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:29:19.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T14:29:19.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "frm_ThemSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T15:36:48.311Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-12T15:36:48.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "frm_ChinhSuaSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs",
@@ -476,133 +481,110 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAAAEcAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T16:00:05.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T16:00:05.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "frm_ThemDocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:00:52.001Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-13T16:00:52.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "frm_NhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_NhanVien.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_NhanVien.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_NhanVien.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_NhanVien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:12:56.846Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T11:12:56.846Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "frm_MuonTraSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T02:28:23.481Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-05T02:28:23.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "frm_History.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_History.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_History.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_History.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_History.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:48:57.944Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-11T09:48:57.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "frm_ChinhSuaDocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaDocGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:01:03.763Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-13T16:01:03.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "frm_ChinhSuaSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ChinhSuaSach.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:03:55.174Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-12T03:03:55.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "frm_LichSuMuonTraDocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:20:28.349Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-13T15:20:28.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "frm_DocGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_DocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_DocGia.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_DocGia.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_DocGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:42:12.97Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T11:42:12.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "frm_ThemSach.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThemSach.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAYwFsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T15:42:12.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "frm_ThongTinDocGiaChiTiet.cs [Design]",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs",
               "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs [Design]",
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T14:52:48.945Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-13T14:52:48.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "frm_ThongTinSachChiTiet.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
@@ -610,11 +592,12 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAQwEYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:22:47.701Z"
+              "WhenOpened": "2024-04-11T04:22:47.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "frm_History.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_History.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_History.cs",
@@ -622,12 +605,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_History.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAAAG4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T09:50:33.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T09:50:33.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "frm_MuonTraSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs",
@@ -635,12 +617,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_MuonTraSach.cs",
               "ViewState": "AQIAAGEAAAAAAAAAAAAAAHMAAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T13:16:45.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T13:16:45.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "frm_LichSuMuonTraDocGia.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs",
@@ -648,12 +629,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_LichSuMuonTraDocGia.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAAADIAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:20:44.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T15:20:44.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "frm_XacNhanTraSach.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_XacNhanTraSach.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_XacNhanTraSach.cs",
@@ -665,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "frm_ThongTinDocGiaChiTiet.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs",
@@ -673,12 +653,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T14:52:52.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T14:52:52.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "frm_ThemDocGia.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs",
@@ -686,12 +665,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThemDocGia.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAAAGwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T16:06:31.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T16:06:31.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "frm_NhanVien.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_NhanVien.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_NhanVien.cs",
@@ -699,12 +677,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_NhanVien.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAGcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T11:26:31.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T11:26:31.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "frm_DocGia.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_DocGia.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_DocGia.cs",
@@ -712,12 +689,11 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_DocGia.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAABEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T06:40:27.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T06:40:27.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "frm_ThongTinDocGiaChiTiet.Designer.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.Designer.cs",
               "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.Designer.cs",
@@ -725,19 +701,7 @@
               "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinDocGiaChiTiet.Designer.cs",
               "ViewState": "AQIAAB4BAAAAAAAAAABRwCEBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T14:53:23.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "frm_ThongTinSachChiTiet.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
-              "RelativeDocumentMoniker": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\C# University\\OOP_Programming\\OOP_QuanLiMuonTraSach\\OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs [Design]",
-              "RelativeToolTip": "OOP_QuanLiMuonTraSach\\frm_ThongTinSachChiTiet.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T04:19:44.371Z"
+              "WhenOpened": "2024-04-13T14:53:23.393Z"
             },
             {
               "$type": "Document",
