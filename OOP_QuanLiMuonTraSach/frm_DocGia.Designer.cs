@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_DocGia));
             this.textBox_SearchFunction = new System.Windows.Forms.TextBox();
-            this.button_Booking = new System.Windows.Forms.Button();
             this.panel_SearchingButton = new System.Windows.Forms.Panel();
             this.button_History = new System.Windows.Forms.Button();
             this.button_Searching = new System.Windows.Forms.Button();
@@ -57,7 +56,6 @@
             this.panel_Null1 = new System.Windows.Forms.Panel();
             this.panel_RatingButton = new System.Windows.Forms.Panel();
             this.panel_HistoryButton = new System.Windows.Forms.Panel();
-            this.panel_SearchingButton.SuspendLayout();
             this.panel_ProfileButton.SuspendLayout();
             this.panel_HomeButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LogoUeh)).BeginInit();
@@ -81,27 +79,8 @@
             this.textBox_SearchFunction.Size = new System.Drawing.Size(240, 22);
             this.textBox_SearchFunction.TabIndex = 0;
             // 
-            // button_Booking
-            // 
-            this.button_Booking.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_Booking.FlatAppearance.BorderSize = 0;
-            this.button_Booking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Booking.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Booking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_Booking.Image = ((System.Drawing.Image)(resources.GetObject("button_Booking.Image")));
-            this.button_Booking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Booking.Location = new System.Drawing.Point(24, 3);
-            this.button_Booking.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Booking.Name = "button_Booking";
-            this.button_Booking.Size = new System.Drawing.Size(166, 39);
-            this.button_Booking.TabIndex = 14;
-            this.button_Booking.Text = "         Booking";
-            this.button_Booking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Booking.UseVisualStyleBackColor = true;
-            // 
             // panel_SearchingButton
             // 
-            this.panel_SearchingButton.Controls.Add(this.button_History);
             this.panel_SearchingButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_SearchingButton.Location = new System.Drawing.Point(0, 181);
             this.panel_SearchingButton.Margin = new System.Windows.Forms.Padding(2);
@@ -118,7 +97,7 @@
             this.button_History.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
             this.button_History.Image = ((System.Drawing.Image)(resources.GetObject("button_History.Image")));
             this.button_History.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_History.Location = new System.Drawing.Point(24, 2);
+            this.button_History.Location = new System.Drawing.Point(24, 4);
             this.button_History.Margin = new System.Windows.Forms.Padding(2);
             this.button_History.Name = "button_History";
             this.button_History.Size = new System.Drawing.Size(166, 39);
@@ -149,7 +128,7 @@
             // 
             // panel_ProfileButton
             // 
-            this.panel_ProfileButton.Controls.Add(this.button_Booking);
+            this.panel_ProfileButton.Controls.Add(this.button_History);
             this.panel_ProfileButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_ProfileButton.Location = new System.Drawing.Point(0, 135);
             this.panel_ProfileButton.Margin = new System.Windows.Forms.Padding(2);
@@ -416,7 +395,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_DocGia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel_SearchingButton.ResumeLayout(false);
             this.panel_ProfileButton.ResumeLayout(false);
             this.panel_HomeButton.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LogoUeh)).EndInit();
@@ -436,7 +414,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox_SearchFunction;
-        private System.Windows.Forms.Button button_Booking;
         private System.Windows.Forms.Panel panel_SearchingButton;
         private System.Windows.Forms.Button button_Searching;
         private System.Windows.Forms.Panel panel_ProfileButton;

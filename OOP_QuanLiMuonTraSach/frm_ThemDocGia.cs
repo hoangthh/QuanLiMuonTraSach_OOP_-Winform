@@ -1,4 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach.Person;
+﻿using OOP_QuanLiMuonTraSach;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,17 +16,26 @@ namespace OOP_QuanLiMuonTraSach
     {
         //Variables
         #region Variables
+        string[] gioiTinh;
         private bool checkInputInsert = true; //Biến check đầu vào khi Insert
         #endregion
 
         public frm_ThemDocGia()
         {
             InitializeComponent();
+            gioiTinh = new string[] { "Nam", "Nữ" };
+            AddComboBoxGioiTinh();
             dateTimePicker_NgaySinhInput.Value = DateTime.Now;
         }
 
         //Functions
         #region Functions
+        public void AddComboBoxGioiTinh()
+        {
+            comboBox_GioiTinhInput.DataSource = gioiTinh;
+            comboBox_GioiTinhInput.SelectedIndex = -1;
+        }
+
         //Hàm check input khi Insert
         private void CheckInputForInsertDocGia(ref bool check)
         {
@@ -87,6 +97,46 @@ namespace OOP_QuanLiMuonTraSach
 
         //Events
         #region Events
+        private void comboBox_GioiTinhInput_Leave(object sender, EventArgs e)
+        {
+            foreach (string item in gioiTinh)
+            {
+                if (comboBox_GioiTinhInput.Text == item)
+                {
+                    return;
+                }
+            }
+            comboBox_GioiTinhInput.Text = "";
+        }
+
+        private void textBox_HoVaTenInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn không cho nhập số vào TextBox
+            }
+        }
+
+        private void dateTimePicker_NgaySinhInput_ValueChanged(object sender, EventArgs e)
+        {
+            if (dateTimePicker_NgaySinhInput.Value > DateTime.Now)
+            {
+                MessageBox.Show("Ngày sinh không được lớn hơn ngày hiện tại");
+                dateTimePicker_NgaySinhInput.Value = DateTime.Now;
+            }
+        }
+
+        private void textBox_SoDienThoaiInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) ||
+           (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9) ||
+           e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Left || e.KeyCode == Keys.Right))
+            {
+                // Nếu không phải là phím số, Backspace, Delete, Left hoặc Right, chặn sự kiện
+                e.SuppressKeyPress = true;
+            }
+        }
+
         private void button_SaveInsert_Click(object sender, EventArgs e)
         {
             CheckInputForInsertDocGia(ref checkInputInsert);

@@ -1,5 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach.Person;
-using OOP_QuanLiMuonTraSach;
+﻿using OOP_QuanLiMuonTraSach;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OOP_QuanLiMuonTraSach
 {
-    internal class StudentList : ISerializable
+    internal class StudentList : IList<Student>,ISerializable
     {
         //Private fields
         private List<Student> students;
@@ -44,13 +43,23 @@ namespace OOP_QuanLiMuonTraSach
             info.AddValue("Students", Students);
         }
 
-        public Student FindStudent(int ID)
+        public void Add(Student student)
         {
-            foreach(Student student in Students)
+            this.Students.Add(student);
+        }
+
+        public Student Find(int id)
+        {
+            foreach (Student student in ThuVien.GetInstance().Employee.StudentList.Students)
             {
-                if(student.IdStudent == ID) return student;
+                if (student.IdStudent == id) return student;
             }
             return null;
+        }
+
+        public void Remove(Student student)
+        {
+            this.Students.Remove(student);
         }
     }
 }

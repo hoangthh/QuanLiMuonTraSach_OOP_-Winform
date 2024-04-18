@@ -1,6 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach;
-using OOP_QuanLiMuonTraSach.Person;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -426,6 +424,7 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_ReturnLastPage_Click(object sender, EventArgs e)
         {
+            if (lastPageNumber == 0) return;
             pageNumber = lastPageNumber;
             if (textBox_SearchName.Text != null)
             {
@@ -482,6 +481,7 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_Update_Click(object sender, EventArgs e)
         {
+            if (dataGridView_ThongTinDocGia.RowCount == 0) return;
             int selectedID = Convert.ToInt32(dataGridView_ThongTinDocGia.SelectedCells[0].OwningRow.Cells["IdStudent"].Value.ToString());
             frm_ChinhSuaDocGia form = new frm_ChinhSuaDocGia(selectedID);
             form.ShowDialog();
@@ -490,8 +490,9 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
+            if (dataGridView_ThongTinDocGia.RowCount == 0) return;
             int selectedID = Convert.ToInt32(dataGridView_ThongTinDocGia.SelectedCells[0].OwningRow.Cells["IdStudent"].Value.ToString());
-            Student studentFind = ThuVien.GetInstance().Employee.StudentList.FindStudent(selectedID);
+            Student studentFind = ThuVien.GetInstance().Employee.FindStudent(selectedID);
             DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa độc giả {studentFind.HoTen} không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {

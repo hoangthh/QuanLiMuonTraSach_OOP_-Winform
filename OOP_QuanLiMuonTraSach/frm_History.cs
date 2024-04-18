@@ -1,6 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach;
-using OOP_QuanLiMuonTraSach.Person;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,11 +27,41 @@ namespace OOP_QuanLiMuonTraSach
             InitializeComponent();
             this.idNguoiDung = idNguoiDung;
             LoadData();
-
+            CustomizeColumnTinhTrang();
         }
 
         //Functions
         #region Functions
+        private void ResetLabelTextToNull(Label label) //Đặt text của lable về null
+        {
+            label.Text = null;
+        }
+
+        private void SetLabelText(Label label, string text) //Set text cho label
+        {
+            label.Text = text;
+        }
+
+        private void FocusTextBox(TextBox textBox) //Focus vào textBox
+        {
+            textBox.Focus();
+        }
+
+        private void CustomizeColumnTinhTrang()
+        {
+            if (dataGridView_History.Columns.Count > 0)
+            {
+                DataGridViewCellStyle style = new DataGridViewCellStyle();
+                style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+                foreach (QuanLiMuonTraSach qlmts in ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.QuanLiMuonTraSaches)
+                {
+                    style.ForeColor = Color.FromArgb(0, 95, 105);
+                }
+
+                dataGridView_History.Columns["TinhTrang"].DefaultCellStyle = style;
+            }
+        }
+
         private void SearchMuonTrasByGeneral() //Hàm tìm kiếm nhân viên 1 cách tổng quát
         {
             // Lấy danh sách sách từ BookList
@@ -48,13 +76,14 @@ namespace OOP_QuanLiMuonTraSach
                 if (item.IdMuonTra.ToString().Contains(textBox_SearchName.Text)
                     || item.IdSach.ToString().Contains(textBox_SearchName.Text)
                     || item.HoTen.ToLower().Contains(textBox_SearchName.Text.ToLower())
-                    || item.TenSach.ToLower().Contains(textBox_SearchName.Text.ToLower()))
+                    || item.TenSach.ToLower().Contains(textBox_SearchName.Text.ToLower())
+                    || item.TinhTrang.ToLower().Contains(textBox_SearchName.Text.ToLower()))
                 {
                     result.Add(item);
                 }
             }
 
-            if (result.Count > 0)
+            if (result.Count >= 0)
             {
                 // Tính toán lại số trang khi có kết quả mới
                 totalRecord = result.Count;
@@ -76,7 +105,8 @@ namespace OOP_QuanLiMuonTraSach
                         e.IdSach,
                         e.NgayMuon,
                         e.NgayTraThucTe,
-                        e.TinhTrang
+                        e.TinhTrang,
+                        e.SoTienPhat
                     };
                     resultList.Add(newItem);
                 }
@@ -115,7 +145,8 @@ namespace OOP_QuanLiMuonTraSach
                     e.IdSach,
                     e.NgayMuon,
                     e.NgayTraThucTe,
-                    e.TinhTrang
+                    e.TinhTrang,
+                    e.SoTienPhat
                 };
                 result.Add(newItem);
             }
@@ -146,12 +177,13 @@ namespace OOP_QuanLiMuonTraSach
         {
             if (dataGridView_History.Columns.Count > 0)
             {
-                dataGridView_History.Columns[0].Width = dataGridView_History.Width * 15 / 100;
-                dataGridView_History.Columns[1].Width = dataGridView_History.Width * 15 / 100;
-                dataGridView_History.Columns[2].Width = dataGridView_History.Width * 15 / 100;
-                dataGridView_History.Columns[3].Width = dataGridView_History.Width * 20 / 100;
-                dataGridView_History.Columns[4].Width = dataGridView_History.Width * 20 / 100;
+                dataGridView_History.Columns[0].Width = dataGridView_History.Width * 10 / 100;
+                dataGridView_History.Columns[1].Width = dataGridView_History.Width * 24 / 100;
+                dataGridView_History.Columns[2].Width = dataGridView_History.Width * 9 / 100;
+                dataGridView_History.Columns[3].Width = dataGridView_History.Width * 16 / 100;
+                dataGridView_History.Columns[4].Width = dataGridView_History.Width * 16 / 100;
                 dataGridView_History.Columns[5].Width = dataGridView_History.Width * 15 / 100;
+                dataGridView_History.Columns[6].Width = dataGridView_History.Width * 10 / 100;
             }
         }
 
@@ -165,7 +197,7 @@ namespace OOP_QuanLiMuonTraSach
                 dataGridView_History.Columns[3].HeaderText = "Ngày mượn";
                 dataGridView_History.Columns[4].HeaderText = "Ngày trả";
                 dataGridView_History.Columns[5].HeaderText = "Tình Trạng";
-                //dataGridView_History.Columns[6].HeaderText = "Đánh giá";
+                dataGridView_History.Columns[6].HeaderText = "Phí phạt";
             }
         }
 
@@ -226,6 +258,39 @@ namespace OOP_QuanLiMuonTraSach
         {
             AdjustRowHeight();
             AdjustColumnWidth();
+        }
+        private void textBox_SearchName_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox_SearchName.Text.Length != 0)
+            {
+                ResetLabelTextToNull(label_SearchName);//Nếu text trong ô textBox được nhập thì xóa label Search
+                pageNumber = 1;
+                SetDefaultButtonChangePageText();
+                ResetColorButton();
+                HighlightButtonCurrentPage(button_ChangePage1);
+                SearchMuonTrasByGeneral();
+            }
+            else
+            {
+                SetLabelText(label_SearchName, "Search by id, name, email..."); //Nếu text rỗng thì hiện lại label Search
+                pageNumber = 1;
+                SetDefaultButtonChangePageText();
+                ResetColorButton();
+                HighlightButtonCurrentPage(button_ChangePage1);
+                LoadData();
+            }
+        }
+
+        private void textBox_SearchName_Click(object sender, EventArgs e)
+        {
+            if (textBox_SearchName.Text.Length == 0)
+                ResetLabelTextToNull(label_SearchName); //TextBox được click thì xóa label Search
+        }
+
+        private void label_SearchName_Click(object sender, EventArgs e)
+        {
+            FocusTextBox(textBox_SearchName); //Nếu click vào label Search thì chuyển Focus vào textBox
+            ResetLabelTextToNull(label_SearchName); //Xóa label Search
         }
 
         private void button_ChangePage1_Click(object sender, EventArgs e)
@@ -391,5 +456,36 @@ namespace OOP_QuanLiMuonTraSach
             }
         }
         #endregion
+
+        private void dataGridView_History_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Kiểm tra xem cột có phải là cột TrinhTrang không và có giá trị không
+            if (dataGridView_History.Columns[e.ColumnIndex].Name == "TinhTrang" && e.Value != null)
+            {
+                // Lấy giá trị của ô
+                string value = e.Value.ToString();
+
+                // Thiết lập màu cho ô tùy thuộc vào giá trị của ô
+                switch (value)
+                {
+                    case "Yêu cầu":
+                        e.CellStyle.ForeColor = Color.Purple;
+                        break;
+                    case "Đang mượn":
+                        e.CellStyle.ForeColor = Color.Blue;
+                        break;
+                    case "Đã trả":
+                        e.CellStyle.ForeColor = Color.Green;
+                        break;
+                    case "Quá hạn":
+                        e.CellStyle.ForeColor = Color.Red;
+                        break;
+                    default:
+                        // Nếu giá trị không phù hợp, sử dụng màu mặc định
+                        e.CellStyle.ForeColor = dataGridView_History.DefaultCellStyle.ForeColor;
+                        break;
+                }
+            }
+        }
     }
 }

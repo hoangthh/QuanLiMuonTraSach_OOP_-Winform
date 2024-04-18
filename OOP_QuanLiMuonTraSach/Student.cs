@@ -6,17 +6,12 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_QuanLiMuonTraSach.Person
+namespace OOP_QuanLiMuonTraSach
 {
-    internal class Student : IPerson, ISerializable
+    internal class Student : Person, ISerializable
     {
         //Private fields
         private int idStudent;
-        private string hoTen;
-        private string gioiTinh;
-        private DateTime ngaySinh;
-        private string email;
-        private string soDienThoai;
         private string lichSuMuon;
         
         //Public fields
@@ -28,32 +23,32 @@ namespace OOP_QuanLiMuonTraSach.Person
 
         public string HoTen
         {
-            get { return hoTen; }
-            set { hoTen = value; }
+            get { return base.HoTen; }
+            set { base.HoTen = value; }
         }
 
         public string GioiTinh
         {
-            get { return gioiTinh; }
-            set { gioiTinh = value; }
+            get { return base.GioiTinh; }
+            set { base.GioiTinh = value; }
         }
 
         public DateTime NgaySinh
         {
-            get { return ngaySinh; }
-            set { ngaySinh = value; }
+            get { return base.NgaySinh; }
+            set { base.NgaySinh = value; }
         }
 
         public string Email
         {
-            get { return email; }
-            set { email = value; }
+            get { return base.Email; }
+            set { base.Email = value; }
         }
 
         public string SoDienThoai
         {
-            get { return soDienThoai; }
-            set { soDienThoai = value; }
+            get { return base.SoDienThoai; }
+            set { base.SoDienThoai = value; }
         }
 
         public string LichSuMuon

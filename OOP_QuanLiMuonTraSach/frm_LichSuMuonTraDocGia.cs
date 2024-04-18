@@ -1,6 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach.Person;
-using OOP_QuanLiMuonTraSach;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button_Booking.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAQJJREFUSEvt
-        lj0KAjEQhUcP4DHEykawsbEQPIKFmKSSZEXxAsJewUZLCwtr8VYKXkFnJIa4iYn4C5IPHjuZfZm3u2wR
-        SPyCEjBVByHbQXHZgv64ovfApaaez2uLZlOGA8t6wNXpcWVzvC7cfkCU4SCy3Gt+pyjDwQ72fSpbXO2M
-        l6ut12PLzI0FxxjIrvEy1dHd+1y9LwffvAXWMYw3BRMpOEQKjmG8KZhIwSH+L5hqr5TE+w0nmMkmHn+U
-        fw/Knusg5MwY4tpb9cGqw6IMBzqwcXV0zO8TzsaMpxDDGg7YFAaS1sBGVe36IFyurNCl7n6BPC/jjzbF
-        B5jgynNWThQBOAPnFQgal1GNlQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="button_History.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAmpJREFUSEvt

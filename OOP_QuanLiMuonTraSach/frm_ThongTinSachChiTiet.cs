@@ -1,4 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach.Person;
+﻿using OOP_QuanLiMuonTraSach;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +28,7 @@ namespace OOP_QuanLiMuonTraSach
             InitializeComponent();
             button_Booking.Visible = false;
             this.idSach = idSach;
-            sach = ThuVien.GetInstance().Employee.BookList.FindBook(idSach);
+            sach = ThuVien.GetInstance().Employee.FindBook(idSach);
             LoadData();
         }
 
@@ -38,8 +38,8 @@ namespace OOP_QuanLiMuonTraSach
             InitializeComponent();
             this.idSach = idSach;
             this.idNguoiDung = idNguoiDung;
-            sach = ThuVien.GetInstance().Employee.BookList.FindBook(idSach);
-            student = ThuVien.GetInstance().Employee.StudentList.FindStudent(idNguoiDung);
+            sach = ThuVien.GetInstance().Employee.FindBook(idSach);
+            student = ThuVien.GetInstance().Employee.FindStudent(idNguoiDung);
             LoadData();
         }
 
@@ -59,18 +59,30 @@ namespace OOP_QuanLiMuonTraSach
         #region Events
         private void button_Booking_Click(object sender, EventArgs e)
         {
-            Book bookFind = ThuVien.GetInstance().Employee.BookList.FindBook(idSach);
+            List<QuanLiMuonTraSach> userList = ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.UserListQuanLiMuonTraSach(idNguoiDung).QuanLiMuonTraSaches;
+            int countSoTienPhat = 0;
+            foreach(QuanLiMuonTraSach item in userList)
+            {
+                if (item.SoTienPhat > 0)
+                {
+                    countSoTienPhat++;
+                }
+            }
+            if (countSoTienPhat >= 3)
+            {
+                MessageBox.Show("Bạn đã trả sách quá hạn nhiều lần \nVui lòng thanh toán để tiếp tục mượn sách", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Book bookFind = ThuVien.GetInstance().Employee.FindBook(idSach);
             if (bookFind == null || bookFind.SoLuong == 0)
             {
                 MessageBox.Show("Số lượng sách đã hết, vui lòng mượn sách khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            ThuVien.GetInstance().Employee.BookList.DecreaseSoLuong(bookFind);
-            ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
             QuanLiMuonTraSach qlmts = new QuanLiMuonTraSach(bookFind, student);
             ThuVien.GetInstance().Employee.AddMuonTraSach(qlmts);
             ThuVienController.Serialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach, ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach);
-            MessageBox.Show("Mượn sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Yêu cầu mượn sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
     }

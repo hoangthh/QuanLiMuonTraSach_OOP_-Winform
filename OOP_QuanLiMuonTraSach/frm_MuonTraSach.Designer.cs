@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MuonTraSach));
             this.panel_Null2 = new System.Windows.Forms.Panel();
             this.label_ThongTinDocGia = new System.Windows.Forms.Label();
             this.label_SearchName = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.button_ChangePage1 = new System.Windows.Forms.Button();
             this.panel_Main = new System.Windows.Forms.Panel();
             this.panel_SearchFunction = new System.Windows.Forms.Panel();
-            this.button_TraSach = new System.Windows.Forms.Button();
             this.panel_Search.SuspendLayout();
             this.panel_Null3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ThongKeMuonTra)).BeginInit();
@@ -305,10 +303,11 @@
             this.dataGridView_ThongKeMuonTra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_ThongKeMuonTra.Size = new System.Drawing.Size(1102, 512);
             this.dataGridView_ThongKeMuonTra.TabIndex = 0;
+            this.dataGridView_ThongKeMuonTra.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ThongKeMuonTra_CellDoubleClick);
+            this.dataGridView_ThongKeMuonTra.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView_ThongKeMuonTra_CellFormatting);
             // 
             // panel_Null4
             // 
-            this.panel_Null4.Controls.Add(this.button_TraSach);
             this.panel_Null4.Controls.Add(this.button_ReturnLastPage);
             this.panel_Null4.Controls.Add(this.button_ReturnFirstPage);
             this.panel_Null4.Controls.Add(this.label_Previous);
@@ -363,24 +362,6 @@
             this.panel_SearchFunction.Size = new System.Drawing.Size(1155, 676);
             this.panel_SearchFunction.TabIndex = 2;
             // 
-            // button_TraSach
-            // 
-            this.button_TraSach.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_TraSach.FlatAppearance.BorderSize = 0;
-            this.button_TraSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_TraSach.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_TraSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_TraSach.Image = ((System.Drawing.Image)(resources.GetObject("button_TraSach.Image")));
-            this.button_TraSach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.Location = new System.Drawing.Point(0, 11);
-            this.button_TraSach.Name = "button_TraSach";
-            this.button_TraSach.Size = new System.Drawing.Size(173, 40);
-            this.button_TraSach.TabIndex = 20;
-            this.button_TraSach.Text = "      Trả sách";
-            this.button_TraSach.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_TraSach.UseVisualStyleBackColor = true;
-            this.button_TraSach.Click += new System.EventHandler(this.button_TraSach_Click);
-            // 
             // frm_MuonTraSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +392,6 @@
         private System.Windows.Forms.Label label_SearchName;
         private System.Windows.Forms.TextBox textBox_SearchName;
         private System.Windows.Forms.Panel panel_Search;
-        private System.Windows.Forms.Button button_TraSach;
         private System.Windows.Forms.Button button_ReturnLastPage;
         private System.Windows.Forms.Button button_ReturnFirstPage;
         private System.Windows.Forms.Label label_Previous;

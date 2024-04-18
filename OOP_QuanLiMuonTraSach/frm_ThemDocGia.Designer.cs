@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel_ThemNhanVienFunction = new System.Windows.Forms.Panel();
+            this.panel_EmailInput = new System.Windows.Forms.Panel();
+            this.textBox_EmailInput = new System.Windows.Forms.TextBox();
+            this.label_EmailInput = new System.Windows.Forms.Label();
             this.button_ResetInsert = new System.Windows.Forms.Button();
             this.button_SaveInsert = new System.Windows.Forms.Button();
             this.panel_SoDienThoaiInput = new System.Windows.Forms.Panel();
@@ -44,15 +47,12 @@
             this.textBox_HoVaTenInput = new System.Windows.Forms.TextBox();
             this.label_HoVaTen = new System.Windows.Forms.Label();
             this.label_ThemDocGiaMoi = new System.Windows.Forms.Label();
-            this.panel_EmailInput = new System.Windows.Forms.Panel();
-            this.textBox_EmailInput = new System.Windows.Forms.TextBox();
-            this.label_EmailInput = new System.Windows.Forms.Label();
             this.panel_ThemNhanVienFunction.SuspendLayout();
+            this.panel_EmailInput.SuspendLayout();
             this.panel_SoDienThoaiInput.SuspendLayout();
             this.panel_GioiTinhInput.SuspendLayout();
             this.panel_NgaySinhInput.SuspendLayout();
             this.panel_HoVaTenInput.SuspendLayout();
-            this.panel_EmailInput.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_ThemNhanVienFunction
@@ -77,6 +77,38 @@
             this.panel_ThemNhanVienFunction.Name = "panel_ThemNhanVienFunction";
             this.panel_ThemNhanVienFunction.Size = new System.Drawing.Size(866, 285);
             this.panel_ThemNhanVienFunction.TabIndex = 1;
+            // 
+            // panel_EmailInput
+            // 
+            this.panel_EmailInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
+            this.panel_EmailInput.Controls.Add(this.textBox_EmailInput);
+            this.panel_EmailInput.ForeColor = System.Drawing.SystemColors.Control;
+            this.panel_EmailInput.Location = new System.Drawing.Point(16, 202);
+            this.panel_EmailInput.Name = "panel_EmailInput";
+            this.panel_EmailInput.Size = new System.Drawing.Size(274, 45);
+            this.panel_EmailInput.TabIndex = 17;
+            // 
+            // textBox_EmailInput
+            // 
+            this.textBox_EmailInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
+            this.textBox_EmailInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_EmailInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_EmailInput.Location = new System.Drawing.Point(2, 9);
+            this.textBox_EmailInput.Name = "textBox_EmailInput";
+            this.textBox_EmailInput.Size = new System.Drawing.Size(269, 26);
+            this.textBox_EmailInput.TabIndex = 2;
+            // 
+            // label_EmailInput
+            // 
+            this.label_EmailInput.AutoSize = true;
+            this.label_EmailInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_EmailInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_EmailInput.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label_EmailInput.Location = new System.Drawing.Point(12, 168);
+            this.label_EmailInput.Name = "label_EmailInput";
+            this.label_EmailInput.Size = new System.Drawing.Size(71, 25);
+            this.label_EmailInput.TabIndex = 16;
+            this.label_EmailInput.Text = "Email *";
             // 
             // button_ResetInsert
             // 
@@ -129,6 +161,7 @@
             this.textBox_SoDienThoaiInput.Name = "textBox_SoDienThoaiInput";
             this.textBox_SoDienThoaiInput.Size = new System.Drawing.Size(202, 26);
             this.textBox_SoDienThoaiInput.TabIndex = 2;
+            this.textBox_SoDienThoaiInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_SoDienThoaiInput_KeyDown);
             // 
             // label_SoDienThoai
             // 
@@ -164,6 +197,7 @@
             this.comboBox_GioiTinhInput.Name = "comboBox_GioiTinhInput";
             this.comboBox_GioiTinhInput.Size = new System.Drawing.Size(118, 33);
             this.comboBox_GioiTinhInput.TabIndex = 10;
+            this.comboBox_GioiTinhInput.Leave += new System.EventHandler(this.comboBox_GioiTinhInput_Leave);
             // 
             // panel_NgaySinhInput
             // 
@@ -187,6 +221,7 @@
             this.dateTimePicker_NgaySinhInput.Size = new System.Drawing.Size(200, 33);
             this.dateTimePicker_NgaySinhInput.TabIndex = 3;
             this.dateTimePicker_NgaySinhInput.Value = new System.DateTime(2024, 3, 8, 0, 0, 0, 0);
+            this.dateTimePicker_NgaySinhInput.ValueChanged += new System.EventHandler(this.dateTimePicker_NgaySinhInput_ValueChanged);
             // 
             // label_NgaySinh
             // 
@@ -231,6 +266,7 @@
             this.textBox_HoVaTenInput.Name = "textBox_HoVaTenInput";
             this.textBox_HoVaTenInput.Size = new System.Drawing.Size(274, 26);
             this.textBox_HoVaTenInput.TabIndex = 2;
+            this.textBox_HoVaTenInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HoVaTenInput_KeyPress);
             // 
             // label_HoVaTen
             // 
@@ -256,38 +292,6 @@
             this.label_ThemDocGiaMoi.TabIndex = 0;
             this.label_ThemDocGiaMoi.Text = "Thêm Độc giả mới";
             // 
-            // panel_EmailInput
-            // 
-            this.panel_EmailInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
-            this.panel_EmailInput.Controls.Add(this.textBox_EmailInput);
-            this.panel_EmailInput.ForeColor = System.Drawing.SystemColors.Control;
-            this.panel_EmailInput.Location = new System.Drawing.Point(16, 202);
-            this.panel_EmailInput.Name = "panel_EmailInput";
-            this.panel_EmailInput.Size = new System.Drawing.Size(274, 45);
-            this.panel_EmailInput.TabIndex = 17;
-            // 
-            // textBox_EmailInput
-            // 
-            this.textBox_EmailInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
-            this.textBox_EmailInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_EmailInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_EmailInput.Location = new System.Drawing.Point(2, 9);
-            this.textBox_EmailInput.Name = "textBox_EmailInput";
-            this.textBox_EmailInput.Size = new System.Drawing.Size(269, 26);
-            this.textBox_EmailInput.TabIndex = 2;
-            // 
-            // label_EmailInput
-            // 
-            this.label_EmailInput.AutoSize = true;
-            this.label_EmailInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label_EmailInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_EmailInput.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label_EmailInput.Location = new System.Drawing.Point(12, 168);
-            this.label_EmailInput.Name = "label_EmailInput";
-            this.label_EmailInput.Size = new System.Drawing.Size(71, 25);
-            this.label_EmailInput.TabIndex = 16;
-            this.label_EmailInput.Text = "Email *";
-            // 
             // frm_ThemDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,17 +299,18 @@
             this.ClientSize = new System.Drawing.Size(866, 285);
             this.Controls.Add(this.panel_ThemNhanVienFunction);
             this.Name = "frm_ThemDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ThemDocGia";
             this.panel_ThemNhanVienFunction.ResumeLayout(false);
             this.panel_ThemNhanVienFunction.PerformLayout();
+            this.panel_EmailInput.ResumeLayout(false);
+            this.panel_EmailInput.PerformLayout();
             this.panel_SoDienThoaiInput.ResumeLayout(false);
             this.panel_SoDienThoaiInput.PerformLayout();
             this.panel_GioiTinhInput.ResumeLayout(false);
             this.panel_NgaySinhInput.ResumeLayout(false);
             this.panel_HoVaTenInput.ResumeLayout(false);
             this.panel_HoVaTenInput.PerformLayout();
-            this.panel_EmailInput.ResumeLayout(false);
-            this.panel_EmailInput.PerformLayout();
             this.ResumeLayout(false);
 
         }

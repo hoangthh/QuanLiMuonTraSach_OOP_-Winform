@@ -138,6 +138,7 @@
             this.textBox_SoLuongUpdateInput.Name = "textBox_SoLuongUpdateInput";
             this.textBox_SoLuongUpdateInput.Size = new System.Drawing.Size(128, 26);
             this.textBox_SoLuongUpdateInput.TabIndex = 2;
+            this.textBox_SoLuongUpdateInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_SoLuongUpdateInput_KeyDown);
             // 
             // label_SoLuongUpdateInput
             // 
@@ -206,6 +207,7 @@
             this.textBox_TacGiaUpdateInput.Name = "textBox_TacGiaUpdateInput";
             this.textBox_TacGiaUpdateInput.Size = new System.Drawing.Size(267, 26);
             this.textBox_TacGiaUpdateInput.TabIndex = 2;
+            this.textBox_TacGiaUpdateInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_TacGiaUpdateInput_KeyPress);
             // 
             // label_TacGiaUpdateInput
             // 
@@ -238,6 +240,7 @@
             this.textBox_TheLoaiUpdateInput.Name = "textBox_TheLoaiUpdateInput";
             this.textBox_TheLoaiUpdateInput.Size = new System.Drawing.Size(200, 26);
             this.textBox_TheLoaiUpdateInput.TabIndex = 2;
+            this.textBox_TheLoaiUpdateInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_TheLoaiUpdateInput_KeyPress);
             // 
             // label_TheLoaiUpdateInput
             // 

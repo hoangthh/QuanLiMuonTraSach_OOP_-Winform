@@ -33,7 +33,6 @@ C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_Qu
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_Searching.resources
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_ThongTinSachChiTiet.resources
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_History.resources
-C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_XacNhanTraSach.resources
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_ChinhSuaSach.resources
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_ThemSach.resources
 C:\Users\PC\Documents\C# University\OOP_Programming\OOP_QuanLiMuonTraSach\OOP_QuanLiMuonTraSach\obj\Debug\OOP_QuanLiMuonTraSach.frm_ThongTinDocGia.resources

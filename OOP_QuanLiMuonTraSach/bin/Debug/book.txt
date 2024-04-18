@@ -2,93 +2,111 @@
   "Books": [
     {
       "IdSach": 1,
-      "TenSach": "Sach1",
-      "TacGia": "TacGia1",
-      "TheLoai": "Tiểu thuyết",
-      "SoLuong": 8,
+      "TenSach": "The Art Of Marketing",
+      "TacGia": "Philip Kotler",
+      "TheLoai": "Kinh doanh",
+      "SoLuong": 11,
       "NhaXuatBan": "NXB Kim Đồng",
-      "NamXuatBan": "2024-05-15T00:00:00"
+      "NamXuatBan": "2024-02-05T19:18:20"
     },
     {
       "IdSach": 2,
-      "TenSach": "Sach2",
-      "TacGia": "TacGia2",
-      "TheLoai": "Truyện trinh thám",
-      "SoLuong": 5,
+      "TenSach": "Logic- Hệ thống và quản lý",
+      "TacGia": "Đặng Đình Vượng",
+      "TheLoai": "Quản trị",
+      "SoLuong": 6,
       "NhaXuatBan": "NXB Liên Doanh",
-      "NamXuatBan": "2024-05-15T00:00:00"
+      "NamXuatBan": "2021-01-15T00:00:00"
     },
     {
       "IdSach": 3,
-      "TenSach": "Sach3",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": 22,
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "2024-05-15T00:00:00"
+      "TenSach": "Kinh tế học vi mô",
+      "TacGia": "Mankiw",
+      "TheLoai": "Kinh tế",
+      "SoLuong": 23,
+      "NhaXuatBan": "NXB Giáo dục",
+      "NamXuatBan": "2022-12-27T00:00:00"
     },
     {
       "IdSach": 4,
-      "TenSach": "Sach4",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
+      "TenSach": "Kỹ năng thuyết trình hiệu quả",
+      "TacGia": "Chris Anderson",
+      "TheLoai": "Kinh doanh",
       "SoLuong": 11,
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "2024-05-15T00:00:00"
+      "NhaXuatBan": "NXB Ưu Tú",
+      "NamXuatBan": "2015-07-04T00:00:00"
     },
     {
       "IdSach": 5,
-      "TenSach": "Sach5",
-      "TacGia": "TacGia5",
-      "TheLoai": "Truyện cười",
+      "TenSach": "Nghệ thuật giao tiếp",
+      "TacGia": "Nguyễn Đình Phong",
+      "TheLoai": "Tạp Chí",
       "SoLuong": 33,
-      "NhaXuatBan": "NXB Trẻ em",
+      "NhaXuatBan": "NXB Tự Do",
       "NamXuatBan": "2024-05-15T00:00:00"
     },
     {
       "IdSach": 6,
-      "TenSach": "Sach6",
-      "TacGia": "TacGia3",
-      "TheLoai": "Truyện cười",
-      "SoLuong": 20,
-      "NhaXuatBan": "NXB Trẻ em",
-      "NamXuatBan": "2024-05-15T00:00:00"
+      "TenSach": "Bí quyết thành công",
+      "TacGia": "Napoleon Hill",
+      "TheLoai": "Kinh doanh",
+      "SoLuong": 21,
+      "NhaXuatBan": "NXB Tuổi Trẻ",
+      "NamXuatBan": "2022-11-27T00:00:00"
     },
     {
       "IdSach": 7,
-      "TenSach": "Sach7",
-      "TacGia": "aaa",
-      "TheLoai": "aaa",
+      "TenSach": "Lập trình Java cơ bản",
+      "TacGia": "Phạm Huy Thông",
+      "TheLoai": "Giáo trình",
       "SoLuong": 12,
-      "NhaXuatBan": "kkk",
-      "NamXuatBan": "2024-04-14T00:00:00+07:00"
+      "NhaXuatBan": "NXB Giáo dục",
+      "NamXuatBan": "2020-10-20T00:00:00"
     },
     {
       "IdSach": 8,
-      "TenSach": "Sach8",
-      "TacGia": "aaa",
-      "TheLoai": "aaa",
-      "SoLuong": 12,
-      "NhaXuatBan": "aa",
-      "NamXuatBan": "2024-04-14T00:00:00+07:00"
+      "TenSach": "Deep Learning",
+      "TacGia": "Kevin P. Murphy",
+      "TheLoai": "Sách tham khảo",
+      "SoLuong": 11,
+      "NhaXuatBan": "NXB Giáo dục",
+      "NamXuatBan": "2024-01-01T00:00:00"
     },
     {
       "IdSach": 9,
-      "TenSach": "test",
-      "TacGia": "test",
-      "TheLoai": "truyen",
+      "TenSach": "Bắt đầu với Machine Learning",
+      "TacGia": "Lê Minh Hải",
+      "TheLoai": "Giáo trình",
       "SoLuong": 13,
-      "NhaXuatBan": "nxb test",
-      "NamXuatBan": "2024-04-15T00:00:00+07:00"
+      "NhaXuatBan": "NXB Giáo dục",
+      "NamXuatBan": "2022-12-17T00:00:00"
     },
     {
       "IdSach": 10,
-      "TenSach": "test1",
-      "TacGia": "test2",
-      "TheLoai": "phim heo",
+      "TenSach": "JavaScript: Definitive Guide",
+      "TacGia": "Nguyễn Ngọc Dung",
+      "TheLoai": "Giáo trình",
       "SoLuong": 13,
-      "NhaXuatBan": "nxb rdg",
-      "NamXuatBan": "2024-04-15T00:00:00+07:00"
+      "NhaXuatBan": "NXB Giáo dục",
+      "NamXuatBan": "2022-08-20T00:00:00"
+    },
+    {
+      "IdSach": 11,
+      "TenSach": "Nhật kí trong tù",
+      "TacGia": "Hồ Chí Minh",
+      "TheLoai": "Nhật kí",
+      "SoLuong": 10,
+      "NhaXuatBan": "NXB Thủ Đô",
+      "NamXuatBan": "2000-04-22T00:00:00"
+    },
+    {
+      "IdSach": 12,
+      "TenSach": "Lịch sử thế giới",
+      "TacGia": "Rosie Nguyễn",
+      "TheLoai": "Lịch sử",
+      "SoLuong": 15,
+      "NhaXuatBan": "NXB Thanh Đa",
+      "NamXuatBan": "2000-12-20T00:00:00"
     }
   ]
 }

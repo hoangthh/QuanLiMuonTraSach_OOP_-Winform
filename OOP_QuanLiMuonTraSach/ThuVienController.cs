@@ -28,7 +28,18 @@ namespace OOP_QuanLiMuonTraSach
         {
             try
             {
+                if (!File.Exists(path))
+                {
+                    File.WriteAllText(path, "");
+                    return default(T);
+                }
                 string jsonFromFile = File.ReadAllText(path);
+
+                if (string.IsNullOrWhiteSpace(jsonFromFile))
+                {
+                    return default(T);
+                }
+
                 T deserializedObject = JsonSerializer.Deserialize<T>(jsonFromFile);
                 return deserializedObject;
             }

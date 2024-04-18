@@ -1,5 +1,4 @@
 ﻿using OOP_QuanLiMuonTraSach;
-using OOP_QuanLiMuonTraSach.Person;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OOP_QuanLiMuonTraSach
 {
-    internal class ListQuanLiMuonTraSach : ISerializable
+    internal class ListQuanLiMuonTraSach : IList<QuanLiMuonTraSach>, ISerializable
     {
         //Private fields
         private List<QuanLiMuonTraSach> listQuanLiMuonTraSach;
@@ -31,6 +30,7 @@ namespace OOP_QuanLiMuonTraSach
         public void GetInstance()
         {
             QuanLiMuonTraSaches = new List<QuanLiMuonTraSach>();
+            if (ThuVienController.Deserialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach) == null) return;
             QuanLiMuonTraSaches = ThuVienController.Deserialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach)?.QuanLiMuonTraSaches ?? new List<QuanLiMuonTraSach>();
         }
 
@@ -46,7 +46,10 @@ namespace OOP_QuanLiMuonTraSach
             info.AddValue("QuanLiMuonTraSaches", QuanLiMuonTraSaches);
         }
 
-
+        public void Add(QuanLiMuonTraSach item)
+        {
+            this.QuanLiMuonTraSaches.Add(item);
+        }
 
         public QuanLiMuonTraSach Find(int IDMuonTra)
         {
@@ -55,6 +58,11 @@ namespace OOP_QuanLiMuonTraSach
                 if (qlmts.IdMuonTra == IDMuonTra) return qlmts;
             }
             return null;
+        }
+
+        public void Remove(QuanLiMuonTraSach qlmts)
+        {
+            this.QuanLiMuonTraSaches.Remove(qlmts);
         }
 
         public ListQuanLiMuonTraSach UserListQuanLiMuonTraSach(int idnguoidung)
@@ -67,27 +75,27 @@ namespace OOP_QuanLiMuonTraSach
                     userqlmts.QuanLiMuonTraSaches.Add(item);
                 }
             }
-            if (userqlmts.QuanLiMuonTraSaches.Count == 0) return null;
+            if (userqlmts.QuanLiMuonTraSaches.Count == 0) return new ListQuanLiMuonTraSach();
             return userqlmts;
         }
 
-        public List<QuanLiMuonTraSach> FindListQuanLiMuonTraSachByIdNguoiDung(int ID)
+        public List<QuanLiMuonTraSach> Find(Student student)
         {
             List<QuanLiMuonTraSach> result = new List<QuanLiMuonTraSach>();
             foreach (QuanLiMuonTraSach qlmts in QuanLiMuonTraSaches)
             {
-                if (qlmts.IdNguoiDung == ID) 
+                if (qlmts.IdNguoiDung == student.IdStudent)
                     result.Add(qlmts);
             }
             return result;
         }
 
-        public List<QuanLiMuonTraSach> FindListQuanLiMuonTraSachByIdSach(int ID)
+        public List<QuanLiMuonTraSach> Find(Book book)
         {
             List<QuanLiMuonTraSach> result = new List<QuanLiMuonTraSach>();
             foreach (QuanLiMuonTraSach qlmts in QuanLiMuonTraSaches)
             {
-                if (qlmts.IdSach == ID)
+                if (qlmts.IdSach == book.IdSach)
                     result.Add(qlmts);
             }
             return result;

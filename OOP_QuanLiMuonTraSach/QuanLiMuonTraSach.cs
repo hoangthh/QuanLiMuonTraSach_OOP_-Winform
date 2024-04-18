@@ -1,5 +1,4 @@
 ﻿using OOP_QuanLiMuonTraSach;
-using OOP_QuanLiMuonTraSach.Person;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -89,7 +88,7 @@ namespace OOP_QuanLiMuonTraSach
         public QuanLiMuonTraSach(Book book, Student student)
         {
             int id;
-            if (ThuVienController.Deserialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach).QuanLiMuonTraSaches == null)
+            if (ThuVienController.Deserialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach) == null)
                 id = 0;
             else
             {
@@ -100,11 +99,9 @@ namespace OOP_QuanLiMuonTraSach
             this.HoTen = student.HoTen;
             this.IdSach = book.IdSach;
             this.TenSach = book.TenSach;
-            this.ngayMuon = DateTime.Now.Date;
-            this.NgayTraDuKien = DateTime.Now.Date.AddDays(14);
             this.NgayTraThucTe = null;
             this.SoTienPhat = 0;
-            this.TinhTrang = "Đang mượn";
+            this.TinhTrang = "Yêu cầu";
         }
 
         //Method

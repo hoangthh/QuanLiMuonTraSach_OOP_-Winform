@@ -26,6 +26,7 @@ namespace OOP_QuanLiMuonTraSach
         {
             InitializeComponent();
             LoadData();
+            CustomizeColumnTinhTrang();
         }
 
         //Functions
@@ -45,6 +46,20 @@ namespace OOP_QuanLiMuonTraSach
             textBox.Focus();
         }
 
+        private void CustomizeColumnTinhTrang()
+        {
+            if (dataGridView_ThongKeMuonTra.Columns.Count > 0)
+            {
+                DataGridViewCellStyle style = new DataGridViewCellStyle();
+                style.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+                foreach (QuanLiMuonTraSach qlmts in ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.QuanLiMuonTraSaches)
+                {
+                    style.ForeColor = Color.FromArgb(0, 95, 105);
+                }
+
+                dataGridView_ThongKeMuonTra.Columns["TinhTrang"].DefaultCellStyle = style;
+            }
+        }
         private void SearchMuonTrasByGeneral() //Hàm tìm kiếm nhân viên 1 cách tổng quát
         {
             // Lấy danh sách sách từ BookList
@@ -60,13 +75,14 @@ namespace OOP_QuanLiMuonTraSach
                     || item.IdNguoiDung.ToString().Contains(textBox_SearchName.Text)
                     || item.IdSach.ToString().Contains(textBox_SearchName.Text)
                     || item.HoTen.ToLower().Contains(textBox_SearchName.Text.ToLower())
-                    || item.TenSach.ToLower().Contains(textBox_SearchName.Text.ToLower()))
+                    || item.TenSach.ToLower().Contains(textBox_SearchName.Text.ToLower())
+                    || item.TinhTrang.ToLower().Contains(textBox_SearchName.Text.ToLower()))
                 {
                     result.Add(item);
                 }
             }
 
-            if (result.Count > 0)
+            if (result.Count >= 0)
             {
                 // Tính toán lại số trang khi có kết quả mới
                 totalRecord = result.Count;
@@ -90,6 +106,7 @@ namespace OOP_QuanLiMuonTraSach
                         e.IdSach,
                         e.NgayMuon,
                         e.NgayTraThucTe,
+                        e.TinhTrang,
                         e.SoTienPhat
                     };
                     resultList.Add(newItem);
@@ -130,6 +147,7 @@ namespace OOP_QuanLiMuonTraSach
                     e.IdSach,
                     e.NgayMuon,
                     e.NgayTraThucTe,
+                    e.TinhTrang,
                     e.SoTienPhat
                 };
                 result.Add(newItem);
@@ -163,13 +181,14 @@ namespace OOP_QuanLiMuonTraSach
             if (dataGridView_ThongKeMuonTra.Columns.Count > 0)
             {
                 dataGridView_ThongKeMuonTra.Columns[0].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
-                dataGridView_ThongKeMuonTra.Columns[1].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
-                dataGridView_ThongKeMuonTra.Columns[2].Width = dataGridView_ThongKeMuonTra.Width * 20 / 100;
+                dataGridView_ThongKeMuonTra.Columns[1].Width = dataGridView_ThongKeMuonTra.Width * 9 / 100;
+                dataGridView_ThongKeMuonTra.Columns[2].Width = dataGridView_ThongKeMuonTra.Width * 15 / 100;
                 dataGridView_ThongKeMuonTra.Columns[3].Width = dataGridView_ThongKeMuonTra.Width * 20 / 100;
-                dataGridView_ThongKeMuonTra.Columns[4].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
+                dataGridView_ThongKeMuonTra.Columns[4].Width = dataGridView_ThongKeMuonTra.Width * 7 / 100;
                 dataGridView_ThongKeMuonTra.Columns[5].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
-                dataGridView_ThongKeMuonTra.Columns[6].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
+                dataGridView_ThongKeMuonTra.Columns[6].Width = dataGridView_ThongKeMuonTra.Width * 9 / 100;
                 dataGridView_ThongKeMuonTra.Columns[7].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
+                dataGridView_ThongKeMuonTra.Columns[8].Width = dataGridView_ThongKeMuonTra.Width * 10 / 100;
             }
         }
 
@@ -177,14 +196,15 @@ namespace OOP_QuanLiMuonTraSach
         {
             if (dataGridView_ThongKeMuonTra.Columns.Count > 0)
             {
-                dataGridView_ThongKeMuonTra.Columns[0].HeaderText = "Mã mượn trả";
-                dataGridView_ThongKeMuonTra.Columns[1].HeaderText = "MSSV";
+                dataGridView_ThongKeMuonTra.Columns[0].HeaderText = "ID mượn trả";
+                dataGridView_ThongKeMuonTra.Columns[1].HeaderText = "ID độc giả";
                 dataGridView_ThongKeMuonTra.Columns[2].HeaderText = "Họ tên";
                 dataGridView_ThongKeMuonTra.Columns[3].HeaderText = "Tên sách";
                 dataGridView_ThongKeMuonTra.Columns[4].HeaderText = "ID sách";
                 dataGridView_ThongKeMuonTra.Columns[5].HeaderText = "Ngày mượn";
                 dataGridView_ThongKeMuonTra.Columns[6].HeaderText = "Ngày trả";
-                dataGridView_ThongKeMuonTra.Columns[7].HeaderText = "Phí phạt";
+                dataGridView_ThongKeMuonTra.Columns[7].HeaderText = "Tình trạng";
+                dataGridView_ThongKeMuonTra.Columns[8].HeaderText = "Phí phạt";
             }
         }
 
@@ -279,6 +299,105 @@ namespace OOP_QuanLiMuonTraSach
         {
             FocusTextBox(textBox_SearchName); //Nếu click vào label Search thì chuyển Focus vào textBox
             ResetLabelTextToNull(label_SearchName); //Xóa label Search
+        }
+
+        private void dataGridView_ThongKeMuonTra_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string tinhTrang = dataGridView_ThongKeMuonTra.CurrentRow.Cells["TinhTrang"].Value.ToString();
+            string docgia = dataGridView_ThongKeMuonTra.CurrentRow.Cells["HoTen"].Value.ToString();
+            string tenSach = dataGridView_ThongKeMuonTra.CurrentRow.Cells["TenSach"].Value.ToString();
+            int idMuonTra = Convert.ToInt32(dataGridView_ThongKeMuonTra.CurrentRow.Cells["IdMuonTra"].Value);
+            int idSach = Convert.ToInt32(dataGridView_ThongKeMuonTra.CurrentRow.Cells["IdSach"].Value);
+            Book bookFind = ThuVien.GetInstance().Employee.FindBook(idSach);
+            QuanLiMuonTraSach phieuMuonTraSach = ThuVien.GetInstance().Employee.FindMuonTraSach(idMuonTra);
+            int lateFee = 50000;
+            if (tinhTrang == "Yêu cầu")
+            {
+                DialogResult result = MessageBox.Show($"Xác nhận cho độc giả {docgia} mượn sách {tenSach} ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    QuanLiMuonTraSach qlmts = ThuVien.GetInstance().Employee.FindMuonTraSach(idMuonTra);
+                    qlmts.TinhTrang = "Đang mượn";
+                    qlmts.NgayMuon = DateTime.Now.Date;
+                    qlmts.NgayTraDuKien = DateTime.Now.Date.AddDays(14);
+                    ThuVien.GetInstance().Employee.BookList.DecreaseSoLuong(bookFind);
+                    ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
+                    ThuVienController.Serialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach, ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach);
+                    MessageBox.Show($"Xác nhận mượn sách thành công", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                    MessageBox.Show($"Xác nhận mượn sách thất bại", "Xác nhận", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadData();
+            }
+            if (tinhTrang == "Đang mượn")
+            {
+                DialogResult resultNoti = MessageBox.Show($"Xác nhận trả sách {phieuMuonTraSach.TenSach} ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resultNoti == DialogResult.Yes)
+                {
+                    phieuMuonTraSach.NgayTraThucTe = DateTime.Now.Date;
+                    int dateLate = Convert.ToInt32((DateTime.Now.Date - phieuMuonTraSach.NgayTraDuKien).TotalDays);
+                    if (dateLate > 0)
+                    {
+                        phieuMuonTraSach.SoTienPhat = lateFee * ((int)Math.Ceiling((double)dateLate / 7));
+                        phieuMuonTraSach.TinhTrang = "Quá hạn";
+                    }
+                    else
+                    {
+                        phieuMuonTraSach.SoTienPhat = 0;
+                        phieuMuonTraSach.TinhTrang = "Đã trả";
+                    }
+                    ThuVien.GetInstance().Employee.BookList.IncreaseSoLuong(bookFind);
+                    ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
+                    ThuVienController.Serialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach, ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach);
+                    MessageBox.Show("Xác nhận trả sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else MessageBox.Show("Xác nhận trả sách thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadData();
+            }
+            if (tinhTrang == "Quá hạn")
+            {
+                DialogResult resultNoti = MessageBox.Show($"Xác nhận sinh viên {phieuMuonTraSach.HoTen} đã thanh toán phí phạt?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (resultNoti == DialogResult.Yes)
+                {
+                        phieuMuonTraSach.SoTienPhat = 0;
+                    phieuMuonTraSach.TinhTrang = "Đã thanh toán";
+                    ThuVienController.Serialize<ListQuanLiMuonTraSach>(FilePath.QuanLiMuonTraSach, ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach);
+                    MessageBox.Show("Xác nhận thanh toán phí phạt thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else MessageBox.Show("Xác nhận thanh toán phí phạt thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadData();
+            }
+        }
+
+        private void dataGridView_ThongKeMuonTra_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // Kiểm tra xem cột có phải là cột TrinhTrang không và có giá trị không
+            if (dataGridView_ThongKeMuonTra.Columns[e.ColumnIndex].Name == "TinhTrang" && e.Value != null)
+            {
+                // Lấy giá trị của ô
+                string value = e.Value.ToString();
+
+                // Thiết lập màu cho ô tùy thuộc vào giá trị của ô
+                switch (value)
+                {
+                    case "Yêu cầu":
+                        e.CellStyle.ForeColor = Color.Purple;
+                        break;
+                    case "Đang mượn":
+                        e.CellStyle.ForeColor = Color.Blue;
+                        break;
+                    case "Đã trả":
+                        e.CellStyle.ForeColor = Color.Green;
+                        break;
+                    case "Quá hạn":
+                        e.CellStyle.ForeColor = Color.Red;
+                        break;
+                    default:
+                        // Nếu giá trị không phù hợp, sử dụng màu mặc định
+                        e.CellStyle.ForeColor = dataGridView_ThongKeMuonTra.DefaultCellStyle.ForeColor;
+                        break;
+                }
+            }
         }
 
         private void button_ChangePage1_Click(object sender, EventArgs e)
@@ -442,12 +561,6 @@ namespace OOP_QuanLiMuonTraSach
                     CreateOrderForButtonChangePageByLastPageNumber(lastPageNumber);
                 }
             }
-        }
-
-        private void button_TraSach_Click(object sender, EventArgs e)
-        {
-            frm_XacNhanTraSach form = new frm_XacNhanTraSach();
-            form.Show();
         }
         #endregion
     }

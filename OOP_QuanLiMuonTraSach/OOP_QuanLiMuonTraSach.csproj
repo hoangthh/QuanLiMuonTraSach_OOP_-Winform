@@ -163,13 +163,9 @@
     <Compile Include="frm_ThongTinSachChiTiet.Designer.cs">
       <DependentUpon>frm_ThongTinSachChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_XacNhanTraSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_XacNhanTraSach.Designer.cs">
-      <DependentUpon>frm_XacNhanTraSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IPerson.cs" />
+    <Compile Include="IController.cs" />
+    <Compile Include="IList.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="ListQuanLiMuonTraSach.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,9 +215,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ThongTinSachChiTiet.resx">
       <DependentUpon>frm_ThongTinSachChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_XacNhanTraSach.resx">
-      <DependentUpon>frm_XacNhanTraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

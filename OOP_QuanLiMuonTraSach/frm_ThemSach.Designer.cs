@@ -30,8 +30,10 @@
         {
             this.panel_ThemNhanVienFunction = new System.Windows.Forms.Panel();
             this.panel_TheLoaiInsertInput = new System.Windows.Forms.Panel();
+            this.textBox_TheLoaiInsertInput = new System.Windows.Forms.TextBox();
             this.label_TheLoaiInsertInput = new System.Windows.Forms.Label();
             this.panel_NhaXuatBanInsertInput = new System.Windows.Forms.Panel();
+            this.textBox_NhaXuatBanInsertInput = new System.Windows.Forms.TextBox();
             this.label_NhaXuatBanInsertInput = new System.Windows.Forms.Label();
             this.panel_SoLuongInsertInput = new System.Windows.Forms.Panel();
             this.textBox_SoLuongInsertInput = new System.Windows.Forms.TextBox();
@@ -49,8 +51,6 @@
             this.textBox_TenSachInsertInput = new System.Windows.Forms.TextBox();
             this.label_TenSachInsertInput = new System.Windows.Forms.Label();
             this.label_ThemSachMoi = new System.Windows.Forms.Label();
-            this.textBox_NhaXuatBanInsertInput = new System.Windows.Forms.TextBox();
-            this.textBox_TheLoaiInsertInput = new System.Windows.Forms.TextBox();
             this.panel_ThemNhanVienFunction.SuspendLayout();
             this.panel_TheLoaiInsertInput.SuspendLayout();
             this.panel_NhaXuatBanInsertInput.SuspendLayout();
@@ -95,6 +95,17 @@
             this.panel_TheLoaiInsertInput.Size = new System.Drawing.Size(240, 45);
             this.panel_TheLoaiInsertInput.TabIndex = 67;
             // 
+            // textBox_TheLoaiInsertInput
+            // 
+            this.textBox_TheLoaiInsertInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
+            this.textBox_TheLoaiInsertInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_TheLoaiInsertInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_TheLoaiInsertInput.Location = new System.Drawing.Point(3, 9);
+            this.textBox_TheLoaiInsertInput.Name = "textBox_TheLoaiInsertInput";
+            this.textBox_TheLoaiInsertInput.Size = new System.Drawing.Size(234, 26);
+            this.textBox_TheLoaiInsertInput.TabIndex = 3;
+            this.textBox_TheLoaiInsertInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_TheLoaiInsertInput_KeyPress);
+            // 
             // label_TheLoaiInsertInput
             // 
             this.label_TheLoaiInsertInput.AutoSize = true;
@@ -116,6 +127,16 @@
             this.panel_NhaXuatBanInsertInput.Name = "panel_NhaXuatBanInsertInput";
             this.panel_NhaXuatBanInsertInput.Size = new System.Drawing.Size(272, 45);
             this.panel_NhaXuatBanInsertInput.TabIndex = 58;
+            // 
+            // textBox_NhaXuatBanInsertInput
+            // 
+            this.textBox_NhaXuatBanInsertInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
+            this.textBox_NhaXuatBanInsertInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_NhaXuatBanInsertInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_NhaXuatBanInsertInput.Location = new System.Drawing.Point(3, 9);
+            this.textBox_NhaXuatBanInsertInput.Name = "textBox_NhaXuatBanInsertInput";
+            this.textBox_NhaXuatBanInsertInput.Size = new System.Drawing.Size(267, 26);
+            this.textBox_NhaXuatBanInsertInput.TabIndex = 3;
             // 
             // label_NhaXuatBanInsertInput
             // 
@@ -149,6 +170,7 @@
             this.textBox_SoLuongInsertInput.Name = "textBox_SoLuongInsertInput";
             this.textBox_SoLuongInsertInput.Size = new System.Drawing.Size(157, 26);
             this.textBox_SoLuongInsertInput.TabIndex = 3;
+            this.textBox_SoLuongInsertInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_SoLuongInsertInput_KeyDown);
             // 
             // textBox_SoLuongUpdateInput
             // 
@@ -227,6 +249,7 @@
             this.textBox_TacGiaInsertInput.Name = "textBox_TacGiaInsertInput";
             this.textBox_TacGiaInsertInput.Size = new System.Drawing.Size(267, 26);
             this.textBox_TacGiaInsertInput.TabIndex = 2;
+            this.textBox_TacGiaInsertInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_TacGiaInsertInput_KeyPress);
             // 
             // label_TacGiaInsertInput
             // 
@@ -315,26 +338,6 @@
             this.label_ThemSachMoi.Size = new System.Drawing.Size(146, 25);
             this.label_ThemSachMoi.TabIndex = 0;
             this.label_ThemSachMoi.Text = "Thêm Sách mới";
-            // 
-            // textBox_NhaXuatBanInsertInput
-            // 
-            this.textBox_NhaXuatBanInsertInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
-            this.textBox_NhaXuatBanInsertInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_NhaXuatBanInsertInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_NhaXuatBanInsertInput.Location = new System.Drawing.Point(3, 9);
-            this.textBox_NhaXuatBanInsertInput.Name = "textBox_NhaXuatBanInsertInput";
-            this.textBox_NhaXuatBanInsertInput.Size = new System.Drawing.Size(267, 26);
-            this.textBox_NhaXuatBanInsertInput.TabIndex = 3;
-            // 
-            // textBox_TheLoaiInsertInput
-            // 
-            this.textBox_TheLoaiInsertInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(222)))), ((int)(((byte)(238)))));
-            this.textBox_TheLoaiInsertInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_TheLoaiInsertInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_TheLoaiInsertInput.Location = new System.Drawing.Point(3, 9);
-            this.textBox_TheLoaiInsertInput.Name = "textBox_TheLoaiInsertInput";
-            this.textBox_TheLoaiInsertInput.Size = new System.Drawing.Size(234, 26);
-            this.textBox_TheLoaiInsertInput.TabIndex = 3;
             // 
             // frm_ThemSach
             // 

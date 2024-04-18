@@ -92,6 +92,33 @@ namespace OOP_QuanLiMuonTraSach
 
         //Events
         #region Events
+        private void textBox_TacGiaInsertInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn không cho nhập số vào TextBox
+            }
+        }
+
+        private void textBox_TheLoaiInsertInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn không cho nhập số vào TextBox
+            }
+        }
+
+        private void textBox_SoLuongInsertInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) ||
+                         (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9) ||
+                         e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Left || e.KeyCode == Keys.Right))
+            {
+                // Nếu không phải là phím số, Backspace, Delete, Left hoặc Right, chặn sự kiện
+                e.SuppressKeyPress = true;
+            }
+        }
+
         private void button_SaveInsert_Click(object sender, EventArgs e)
         {
             CheckInputForInsertSach(ref checkInputInsert);

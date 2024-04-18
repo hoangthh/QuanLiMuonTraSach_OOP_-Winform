@@ -199,6 +199,7 @@
             this.textBox_SoDienThoaiInput.Name = "textBox_SoDienThoaiInput";
             this.textBox_SoDienThoaiInput.Size = new System.Drawing.Size(202, 26);
             this.textBox_SoDienThoaiInput.TabIndex = 2;
+            this.textBox_SoDienThoaiInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_SoDienThoaiInput_KeyDown);
             // 
             // label_SoDienThoai
             // 
@@ -234,6 +235,7 @@
             this.comboBox_GioiTinhInput.Name = "comboBox_GioiTinhInput";
             this.comboBox_GioiTinhInput.Size = new System.Drawing.Size(118, 33);
             this.comboBox_GioiTinhInput.TabIndex = 10;
+            this.comboBox_GioiTinhInput.Leave += new System.EventHandler(this.comboBox_GioiTinhInput_Leave);
             // 
             // panel_NgaySinhInput
             // 
@@ -257,6 +259,7 @@
             this.dateTimePicker_NgaySinhInput.Size = new System.Drawing.Size(200, 33);
             this.dateTimePicker_NgaySinhInput.TabIndex = 3;
             this.dateTimePicker_NgaySinhInput.Value = new System.DateTime(2024, 3, 8, 0, 0, 0, 0);
+            this.dateTimePicker_NgaySinhInput.ValueChanged += new System.EventHandler(this.dateTimePicker_NgaySinhInput_ValueChanged);
             // 
             // label_NgaySinh
             // 
@@ -301,6 +304,7 @@
             this.textBox_HoVaTenInput.Name = "textBox_HoVaTenInput";
             this.textBox_HoVaTenInput.Size = new System.Drawing.Size(274, 26);
             this.textBox_HoVaTenInput.TabIndex = 2;
+            this.textBox_HoVaTenInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_HoVaTenInput_KeyPress);
             // 
             // label_HoVaTen
             // 
@@ -333,6 +337,7 @@
             this.ClientSize = new System.Drawing.Size(785, 352);
             this.Controls.Add(this.panel_ThemNhanVienFunction);
             this.Name = "frm_ChinhSuaDocGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_ChinhSuaDocGia";
             this.panel_ThemNhanVienFunction.ResumeLayout(false);
             this.panel_ThemNhanVienFunction.PerformLayout();

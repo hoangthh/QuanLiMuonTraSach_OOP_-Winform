@@ -1,6 +1,4 @@
-﻿using OOP_QuanLiMuonTraSach;
-using OOP_QuanLiMuonTraSach.Person;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +23,7 @@ namespace OOP_QuanLiMuonTraSach
         {
             InitializeComponent();
             this.idNguoiDung = idNguoiDung;
-            nguoidung = ThuVien.GetInstance().Employee.StudentList.FindStudent(idNguoiDung);
+            nguoidung = ThuVien.GetInstance().Employee.FindStudent(idNguoiDung);
             LoadData(idNguoiDung);
         }
 

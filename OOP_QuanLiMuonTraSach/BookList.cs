@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace OOP_QuanLiMuonTraSach
 {
-    public class BookList : ISerializable
+    public class BookList : IList<Book>, ISerializable
     {
         //Private fields
         private List<Book> books;
@@ -25,7 +25,7 @@ namespace OOP_QuanLiMuonTraSach
         //Constructor
         public BookList()
         {
-  
+
         }
 
         //Method
@@ -43,6 +43,7 @@ namespace OOP_QuanLiMuonTraSach
         public void GetInstance()
         {
             Books = new List<Book>();
+            if (ThuVienController.Deserialize<BookList>(FilePath.Book) == null) return;
             Books = ThuVienController.Deserialize<BookList>(FilePath.Book).Books;
         }
 
@@ -56,7 +57,12 @@ namespace OOP_QuanLiMuonTraSach
             book.SoLuong++;
         }
 
-        public Book FindBook(int id)
+        public void Add(Book book)
+        {
+            this.Books.Add(book);
+        }
+
+        public Book Find(int id)
         {
             Book targetBook = null;
             foreach (Book book in ThuVien.GetInstance().Employee.BookList.Books)
@@ -68,6 +74,11 @@ namespace OOP_QuanLiMuonTraSach
                 }
             }
             return null;
+        }
+
+        public void Remove(Book book)
+        {
+            this.Books.Remove(book);
         }
     }
 }

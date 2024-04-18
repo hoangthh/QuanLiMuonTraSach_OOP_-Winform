@@ -16,14 +16,14 @@ namespace OOP_QuanLiMuonTraSach
         #region Variables
         private int idSach; //Biến chứa idSach
         private Book sach; //Biến Book chứa idSach
-        private Tuple<string, string, string, int, string, string> info;
         #endregion
 
         public frm_ChinhSuaSach(int idSach)
         {
             InitializeComponent();
             this.idSach = idSach;
-            sach =ThuVien.GetInstance().Employee.BookList.FindBook(idSach);
+            sach = ThuVien.GetInstance().Employee.FindBook(idSach);
+            dateTimePicker_NamXuatBanUpdateInput.Value = DateTime.Now;
             BindingDataSelected();
         }
 
@@ -75,7 +75,7 @@ namespace OOP_QuanLiMuonTraSach
                 sach.NamXuatBan = dateTimePicker_NamXuatBanUpdateInput.Value;
                 ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
 
-                List<QuanLiMuonTraSach> qlmts = ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.FindListQuanLiMuonTraSachByIdSach(idSach);
+                List<QuanLiMuonTraSach> qlmts = ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.Find(sach);
                 foreach (QuanLiMuonTraSach item in qlmts)
                 {
                     item.TenSach = textBox_TenSachUpdateInput.Text;
@@ -104,8 +104,39 @@ namespace OOP_QuanLiMuonTraSach
 
         private void dateTimePicker_NamXuatBanUpdateInput_ValueChanged(object sender, EventArgs e)
         {
-
+            if (dateTimePicker_NamXuatBanUpdateInput.Value > DateTime.Now)
+            {
+                MessageBox.Show("Năm xuất bản không được lớn hơn ngày hiện tại");
+                dateTimePicker_NamXuatBanUpdateInput.Value = DateTime.Now;
+            }
         }
-        #endregion
+
+        private void textBox_TacGiaUpdateInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn không cho nhập số vào TextBox
+            }
+        }
+
+        private void textBox_TheLoaiUpdateInput_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn không cho nhập số vào TextBox
+            }
+        }
+
+        private void textBox_SoLuongUpdateInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) ||
+          (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9) ||
+          e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete || e.KeyCode == Keys.Left || e.KeyCode == Keys.Right))
+            {
+                // Nếu không phải là phím số, Backspace, Delete, Left hoặc Right, chặn sự kiện
+                e.SuppressKeyPress = true;
+            }
+        }
+        #endregion      
     }
 }

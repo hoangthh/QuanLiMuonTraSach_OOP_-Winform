@@ -340,9 +340,9 @@ namespace OOP_QuanLiMuonTraSach
                 dataGridView_ChinhSuaSach.Columns[0].Width = dataGridView_ChinhSuaSach.Width * 5 / 100;
                 dataGridView_ChinhSuaSach.Columns[1].Width = dataGridView_ChinhSuaSach.Width * 20 / 100;
                 dataGridView_ChinhSuaSach.Columns[2].Width = dataGridView_ChinhSuaSach.Width * 20 / 100;
-                dataGridView_ChinhSuaSach.Columns[3].Width = dataGridView_ChinhSuaSach.Width * 10 / 100;
+                dataGridView_ChinhSuaSach.Columns[3].Width = dataGridView_ChinhSuaSach.Width * 13 / 100;
                 dataGridView_ChinhSuaSach.Columns[4].Width = dataGridView_ChinhSuaSach.Width * 10 / 100;
-                dataGridView_ChinhSuaSach.Columns[5].Width = dataGridView_ChinhSuaSach.Width * 20 / 100;
+                dataGridView_ChinhSuaSach.Columns[5].Width = dataGridView_ChinhSuaSach.Width * 17 / 100;
                 dataGridView_ChinhSuaSach.Columns[6].Width = dataGridView_ChinhSuaSach.Width * 15 / 100;
             }
         }
@@ -731,6 +731,7 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_ReturnLastPage_Click(object sender, EventArgs e)
         {
+            if (lastPageNumber == 0) return;
             pageNumber = lastPageNumber;
             if (isFilter == true)
             {
@@ -825,7 +826,10 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_Update_Click(object sender, EventArgs e)
         {
-            int selectedID = Convert.ToInt32(dataGridView_ChinhSuaSach.SelectedCells[0].OwningRow.Cells["IdSach"].Value.ToString());
+            if (dataGridView_ChinhSuaSach.RowCount == 0) return;
+            object idSach = dataGridView_ChinhSuaSach.SelectedCells[0].OwningRow.Cells["IdSach"].Value;
+            if (idSach == null) return;
+            int selectedID = Convert.ToInt32(idSach.ToString());
             frm_ChinhSuaSach form = new frm_ChinhSuaSach(selectedID);
             form.ShowDialog();
             LoadData();
@@ -833,13 +837,14 @@ namespace OOP_QuanLiMuonTraSach
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
+            if (dataGridView_ChinhSuaSach.RowCount == 0) return;
             int selectedID = Convert.ToInt32(dataGridView_ChinhSuaSach.SelectedCells[0].OwningRow.Cells["IdSach"].Value.ToString());
-            Book bookFind = ThuVien.GetInstance().Employee.BookList.FindBook(selectedID);
+            Book bookFind = ThuVien.GetInstance().Employee.FindBook(selectedID);
             DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa sách {bookFind.TenSach} không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
 
-                ThuVien.GetInstance().Employee.BookList.Books.Remove(bookFind);
+                ThuVien.GetInstance().Employee.RemoveBook(bookFind);
                 ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
                 MessageBox.Show("Xóa sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();

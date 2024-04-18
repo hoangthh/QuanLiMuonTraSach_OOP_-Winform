@@ -44,7 +44,6 @@
             this.button_ThongTinSach = new System.Windows.Forms.Button();
             this.timer_TaiKhoanNhanVienTransition = new System.Windows.Forms.Timer(this.components);
             this.timer_QuanLiSachTransition = new System.Windows.Forms.Timer(this.components);
-            this.button_ThongKe = new System.Windows.Forms.Button();
             this.panel_ChildQuanLiDocGia = new System.Windows.Forms.Panel();
             this.button_ChinhSuaDocGia = new System.Windows.Forms.Button();
             this.button_ThongTinDocGia = new System.Windows.Forms.Button();
@@ -241,24 +240,6 @@
             this.timer_QuanLiSachTransition.Interval = 10;
             this.timer_QuanLiSachTransition.Tick += new System.EventHandler(this.timer_QuanLiSachTransition_Tick);
             // 
-            // button_ThongKe
-            // 
-            this.button_ThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_ThongKe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_ThongKe.FlatAppearance.BorderSize = 0;
-            this.button_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_ThongKe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_ThongKe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(105)))));
-            this.button_ThongKe.Image = ((System.Drawing.Image)(resources.GetObject("button_ThongKe.Image")));
-            this.button_ThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ThongKe.Location = new System.Drawing.Point(0, 400);
-            this.button_ThongKe.Name = "button_ThongKe";
-            this.button_ThongKe.Size = new System.Drawing.Size(217, 50);
-            this.button_ThongKe.TabIndex = 12;
-            this.button_ThongKe.Text = "          Thống kê";
-            this.button_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_ThongKe.UseVisualStyleBackColor = true;
-            // 
             // panel_ChildQuanLiDocGia
             // 
             this.panel_ChildQuanLiDocGia.Controls.Add(this.button_ChinhSuaDocGia);
@@ -380,7 +361,6 @@
             // 
             // panel_Sidebar
             // 
-            this.panel_Sidebar.Controls.Add(this.button_ThongKe);
             this.panel_Sidebar.Controls.Add(this.panel_ChildQuanLiDocGia);
             this.panel_Sidebar.Controls.Add(this.button_QuanLiDocGia);
             this.panel_Sidebar.Controls.Add(this.panel_ChildQuanLiSach);
@@ -437,7 +417,6 @@
         private System.Windows.Forms.Button button_ThongTinSach;
         private System.Windows.Forms.Timer timer_TaiKhoanNhanVienTransition;
         private System.Windows.Forms.Timer timer_QuanLiSachTransition;
-        private System.Windows.Forms.Button button_ThongKe;
         private System.Windows.Forms.Panel panel_ChildQuanLiDocGia;
         private System.Windows.Forms.Button button_ChinhSuaDocGia;
         private System.Windows.Forms.Button button_ThongTinDocGia;

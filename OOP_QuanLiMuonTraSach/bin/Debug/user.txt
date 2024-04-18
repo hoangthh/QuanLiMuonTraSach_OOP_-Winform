@@ -2,38 +2,65 @@
   "Students": [
     {
       "IdStudent": 1,
-      "HoTen": "A",
+      "HoTen": "Nguyễn Văn A",
       "GioiTinh": "Nam",
-      "NgaySinh": "2024-04-13T00:00:00+07:00",
-      "Email": "A@gmail.com",
+      "NgaySinh": "2000-06-13T00:00:00",
+      "Email": "nguyenvana@gmail.com",
       "SoDienThoai": "0123123",
       "LichSuMuon": "Lịch sử mượn"
     },
     {
       "IdStudent": 2,
-      "HoTen": "B",
+      "HoTen": "Lê Văn B",
       "GioiTinh": "Nam",
-      "NgaySinh": "2024-04-13T00:00:00+07:00",
-      "Email": "B@gmail.com",
+      "NgaySinh": "2001-05-16T00:00:00",
+      "Email": "levanb@gmail.com",
       "SoDienThoai": "0123123",
       "LichSuMuon": "Lịch sử mượn"
     },
     {
       "IdStudent": 3,
-      "HoTen": "C",
-      "GioiTinh": "Nam",
-      "NgaySinh": "2024-04-13T00:00:00+07:00",
-      "Email": "C@gmail.com",
+      "HoTen": "Trần Thị C",
+      "GioiTinh": "Nữ",
+      "NgaySinh": "2004-06-28T00:00:00",
+      "Email": "tranthic@gmail.com",
       "SoDienThoai": "0123123",
       "LichSuMuon": "Lịch sử mượn"
     },
     {
       "IdStudent": 4,
-      "HoTen": "D",
+      "HoTen": "Hoàng Văn D",
       "GioiTinh": "Nam",
-      "NgaySinh": "2024-04-13T00:00:00+07:00",
-      "Email": "D@gmail.com",
+      "NgaySinh": "2002-12-28T00:00:00",
+      "Email": "hoangvand@gmail.com",
       "SoDienThoai": "0123123",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 5,
+      "HoTen": "Mach Gia E",
+      "GioiTinh": "Nữ",
+      "NgaySinh": "2003-11-25T00:00:00",
+      "Email": "machgiae@gmail.com",
+      "SoDienThoai": "03872112",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 6,
+      "HoTen": "Vũ Tấn F",
+      "GioiTinh": "Nam",
+      "NgaySinh": "1999-09-30T00:00:00",
+      "Email": "vutanf@gmail.com",
+      "SoDienThoai": "03712312",
+      "LichSuMuon": "Lịch sử mượn"
+    },
+    {
+      "IdStudent": 7,
+      "HoTen": "Phạm Quỳnh G",
+      "GioiTinh": "Nam",
+      "NgaySinh": "2004-11-28T00:00:00",
+      "Email": "phamquynhg@gmail.com",
+      "SoDienThoai": "01239923",
       "LichSuMuon": "Lịch sử mượn"
     }
   ]
