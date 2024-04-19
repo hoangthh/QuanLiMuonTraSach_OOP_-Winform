@@ -104,7 +104,7 @@
       "TenSach": "Lịch sử thế giới",
       "TacGia": "Rosie Nguyễn",
       "TheLoai": "Lịch sử",
-      "SoLuong": 15,
+      "SoLuong": 14,
       "NhaXuatBan": "NXB Thanh Đa",
       "NamXuatBan": "2000-12-20T00:00:00"
     }

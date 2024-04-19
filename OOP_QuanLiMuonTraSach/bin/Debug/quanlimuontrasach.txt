@@ -198,11 +198,11 @@
       "HoTen": "Hoàng Văn D",
       "IdSach": 12,
       "TenSach": "Lịch sử thế giới",
-      "NgayMuon": "0001-01-01T00:00:00",
-      "NgayTraDuKien": "0001-01-01T00:00:00",
+      "NgayMuon": "2024-04-19T00:00:00+07:00",
+      "NgayTraDuKien": "2024-05-03T00:00:00+07:00",
       "NgayTraThucTe": null,
       "SoTienPhat": 0,
-      "TinhTrang": "Yêu cầu"
+      "TinhTrang": "Đang mượn"
     },
     {
       "IdMuonTra": 18,
@@ -222,6 +222,18 @@
       "HoTen": "Trần Thị C",
       "IdSach": 3,
       "TenSach": "Kinh tế học vi mô",
+      "NgayMuon": "0001-01-01T00:00:00",
+      "NgayTraDuKien": "0001-01-01T00:00:00",
+      "NgayTraThucTe": null,
+      "SoTienPhat": 0,
+      "TinhTrang": "Yêu cầu"
+    },
+    {
+      "IdMuonTra": 20,
+      "IdNguoiDung": 4,
+      "HoTen": "Hoàng Văn D",
+      "IdSach": 12,
+      "TenSach": "Lịch sử thế giới",
       "NgayMuon": "0001-01-01T00:00:00",
       "NgayTraDuKien": "0001-01-01T00:00:00",
       "NgayTraThucTe": null,
