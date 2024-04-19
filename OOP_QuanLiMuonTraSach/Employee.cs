@@ -71,7 +71,7 @@ namespace OOP_QuanLiMuonTraSach
         {
             this.StudentList.Add(student);
         }
-        public Student FindStudent(int id)
+        public Student FindDocGia(int id)
         {
             return this.StudentList.Find(id);
         }

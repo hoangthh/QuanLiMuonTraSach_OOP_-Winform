@@ -87,7 +87,6 @@ namespace OOP_QuanLiMuonTraSach
             {
                 MessageBox.Show("Chỉnh sửa thông tin sách thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
         #endregion
 

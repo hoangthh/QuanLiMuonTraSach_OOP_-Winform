@@ -129,7 +129,10 @@ namespace OOP_QuanLiMuonTraSach
 
         List<object> LoadRecord(int page, int recordNum) //Hàm phân trang 
         {
+            //List chứa danh sách dữ liệu
             List<object> result = new List<object>();
+
+            //List chứa danh sách các cuốn sách trong thư viện
             List<QuanLiMuonTraSach> quanLiMuonTraSaches = ThuVien.GetInstance().Employee.ListQuanLiMuonTraSach.QuanLiMuonTraSaches;
 
             int startIndex = (page - 1) * recordNum;

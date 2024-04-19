@@ -25,7 +25,7 @@ namespace OOP_QuanLiMuonTraSach
             this.idDocGia = idDocGia;
             dateTimePicker_NgaySinhInput.Value = DateTime.Now;
             gioiTinh = new string[] { "Nam", "Nữ" };
-            student = ThuVien.GetInstance().Employee.FindStudent(idDocGia);
+            student = ThuVien.GetInstance().Employee.FindDocGia(idDocGia);
             BindingDataSelected();
         }
 

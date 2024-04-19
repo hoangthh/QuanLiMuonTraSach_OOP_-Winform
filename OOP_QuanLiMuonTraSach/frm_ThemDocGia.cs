@@ -82,7 +82,7 @@ namespace OOP_QuanLiMuonTraSach
                 ThuVienController.Serialize<StudentList>(FilePath.User, ThuVien.GetInstance().Employee.StudentList);
                 MessageBox.Show("Thêm độc giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else { MessageBox.Show("Thêm độc giả chưa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else { MessageBox.Show("Thêm độc giả thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ResetControl() //Hàm đặt các input về null

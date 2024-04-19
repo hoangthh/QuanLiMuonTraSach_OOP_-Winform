@@ -76,7 +76,7 @@ namespace OOP_QuanLiMuonTraSach
                 ThuVienController.Serialize<BookList>(FilePath.Book, ThuVien.GetInstance().Employee.BookList);
                 MessageBox.Show("Thêm sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else { MessageBox.Show("Thêm sách chưa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            else { MessageBox.Show("Thêm sách thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ResetControl() //Hàm đặt các input về null

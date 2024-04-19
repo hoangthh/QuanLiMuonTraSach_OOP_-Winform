@@ -22,7 +22,7 @@ namespace OOP_QuanLiMuonTraSach
 
         void AddDocGia(Student student);
 
-        Student FindStudent(int id);
+        Student FindDocGia(int id);
 
         void RemoveDocGia(Student student);
 

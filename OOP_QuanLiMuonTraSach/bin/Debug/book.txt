@@ -107,6 +107,15 @@
       "SoLuong": 14,
       "NhaXuatBan": "NXB Thanh Đa",
       "NamXuatBan": "2000-12-20T00:00:00"
+    },
+    {
+      "IdSach": 13,
+      "TenSach": "Conan: The Detective ",
+      "TacGia": "Roys Whale",
+      "TheLoai": "Tiểu thuyết",
+      "SoLuong": 6,
+      "NhaXuatBan": "NXB Hồng Đức",
+      "NamXuatBan": "2015-10-23T00:00:00"
     }
   ]
 }

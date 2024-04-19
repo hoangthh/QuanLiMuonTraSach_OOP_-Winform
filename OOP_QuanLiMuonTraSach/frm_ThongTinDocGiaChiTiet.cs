@@ -23,7 +23,7 @@ namespace OOP_QuanLiMuonTraSach
         {
             InitializeComponent();
             this.idNguoiDung = idNguoiDung;
-            nguoidung = ThuVien.GetInstance().Employee.FindStudent(idNguoiDung);
+            nguoidung = ThuVien.GetInstance().Employee.FindDocGia(idNguoiDung);
             LoadData(idNguoiDung);
         }
 

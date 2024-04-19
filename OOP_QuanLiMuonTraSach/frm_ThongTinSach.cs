@@ -278,8 +278,13 @@ namespace OOP_QuanLiMuonTraSach
 
         private void LoadData()
         {
+            //Tính tổng số phần tử có trong danh sách
             totalRecord = ThuVien.GetInstance().Employee.BookList.Books.Count;
-            lastPageNumber = (int)Math.Ceiling((double)totalRecord / numberRecord); //Công thức tính trang cuối cùng trong 
+
+            //Công thức tính trang cuối cùng trong danh sách
+            lastPageNumber = (int)Math.Ceiling((double)totalRecord / numberRecord); 
+
+            //Đưa dữ liệu lên dataGridView
             dataGridView_ChinhSuaSach.DataSource = LoadRecord(pageNumber, numberRecord);
             AdjustColumnWidth();
             AdjustRowHeight();
@@ -288,7 +293,10 @@ namespace OOP_QuanLiMuonTraSach
 
         private List<object> LoadRecord(int page, int recordNum)
         {
+            //List chứa danh sách dữ liệu
             List<object> result = new List<object>();
+
+            //List chứa danh sách các cuốn sách trong thư viện
             List<Book> books = ThuVien.GetInstance().Employee.BookList.Books;
 
             int startIndex = (page - 1) * recordNum;
@@ -443,7 +451,8 @@ namespace OOP_QuanLiMuonTraSach
         {
             if (textBox_SearchName.Text.Length != 0)
             {
-                ResetLabelTextToNull(label_SearchName);//Nếu text trong ô textBox được nhập thì xóa label Search
+                //Nếu text trong ô textBox được nhập thì xóa label Search
+                ResetLabelTextToNull(label_SearchName);
                 pageNumber = 1;
                 SetDefaultButtonChangePageText();
                 ResetColorButton();
@@ -452,7 +461,8 @@ namespace OOP_QuanLiMuonTraSach
             }
             else
             {
-                SetLabelText(label_SearchName, "Search by id, book, author..."); //Nếu text rỗng thì hiện lại label Search
+                //Nếu text rỗng thì hiện lại label Search
+                SetLabelText(label_SearchName, "Search by id, book, author..."); 
                 pageNumber = 1;
                 SetDefaultButtonChangePageText();
                 ResetColorButton();

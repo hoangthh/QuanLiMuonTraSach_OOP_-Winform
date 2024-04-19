@@ -39,7 +39,7 @@ namespace OOP_QuanLiMuonTraSach
             this.idSach = idSach;
             this.idNguoiDung = idNguoiDung;
             sach = ThuVien.GetInstance().Employee.FindBook(idSach);
-            student = ThuVien.GetInstance().Employee.FindStudent(idNguoiDung);
+            student = ThuVien.GetInstance().Employee.FindDocGia(idNguoiDung);
             LoadData();
         }
 

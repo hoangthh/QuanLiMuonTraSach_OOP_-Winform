@@ -100,9 +100,14 @@ namespace OOP_QuanLiMuonTraSach
 
         private void LoadData() //Hàm để hiển thị dữ liệu
         {
+            //Tính tổng số phần tử có trong danh sách
             totalRecord = ThuVien.GetInstance().Employee.StudentList.Students.Count;
-            lastPageNumber = (int)Math.Ceiling((double)totalRecord / numberRecord); //Công thức tính trang cuối cùng trong bảng
-            dataGridView_ThongTinDocGia.DataSource = LoadRecord(pageNumber, numberRecord); //Hiển thị lên dataGridView
+
+            //Công thức tính trang cuối cùng trong danh sách
+            lastPageNumber = (int)Math.Ceiling((double)totalRecord / numberRecord);
+
+            //Hiển thị lên dataGridView
+            dataGridView_ThongTinDocGia.DataSource = LoadRecord(pageNumber, numberRecord); 
             AdjustRowHeight(); //Customize lại height các dòng
             AdjustColumnWidth(); //Customize lại width các cột
             ChangeHeader(); //Thay đổi tiêu đề hiển thị trên dataGridView
@@ -111,7 +116,10 @@ namespace OOP_QuanLiMuonTraSach
 
         List<object> LoadRecord(int page, int recordNum)
         {
+            //List chứa danh sách dữ liệu
             List<object> result = new List<object>();
+
+            //List chứa danh sách các cuốn sách trong thư viện
             List<Student> students = ThuVien.GetInstance().Employee.StudentList.Students;
 
             int startIndex = (page - 1) * recordNum;
@@ -492,11 +500,11 @@ namespace OOP_QuanLiMuonTraSach
         {
             if (dataGridView_ThongTinDocGia.RowCount == 0) return;
             int selectedID = Convert.ToInt32(dataGridView_ThongTinDocGia.SelectedCells[0].OwningRow.Cells["IdStudent"].Value.ToString());
-            Student studentFind = ThuVien.GetInstance().Employee.FindStudent(selectedID);
+            Student studentFind = ThuVien.GetInstance().Employee.FindDocGia(selectedID);
             DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa độc giả {studentFind.HoTen} không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                ThuVien.GetInstance().Employee.StudentList.Students.Remove(studentFind);
+                ThuVien.GetInstance().Employee.RemoveDocGia(studentFind);
                 ThuVienController.Serialize<StudentList>(FilePath.User, ThuVien.GetInstance().Employee.StudentList);
                 MessageBox.Show("Xóa độc giả thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();
